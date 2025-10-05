@@ -1,0 +1,27 @@
+{
+	"name": "k",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "turbo run dev",
+		"build": "turbo run build",
+		"format": "prettier --cache --write .",
+		"check": "turbo check",
+		"prettier": "prettier --write \"**/*.{ts,tsx,md,svelte,js,json,yaml}\"",
+		"prettier-check": "prettier --plugin-search-dir . --check .",
+		"sanity": "pnpm --filter @k/sanity",
+		"portfolio": "pnpm --filter @k/portfolio",
+		"knip": "knip"
+	},
+	"devDependencies": {
+		"@types/node": "^22.15.18",
+		"knip": "^5.56.0",
+		"prettier": "3.5.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"turbo": "^2.5.3",
+		"typescript": "^5.8.3",
+		"unique-names-generator": "^4.7.1",
+		"wrangler": "^4.15.2"
+	},
+	"packageManager": "pnpm@10.1.0"
+}
