@@ -8,7 +8,6 @@ import { zod } from 'sveltekit-superforms/adapters';
 import { error } from '@sveltejs/kit';
 import { getAllPosts, getPost } from '@/lib/getPost';
 import { moderateContent } from '@/lib/server/moderation';
-import { runQuery } from '@/lib/services/sanity';
 
 export const load = (async ({ params, locals }) => {
 	const post = await getPost(params.slug);

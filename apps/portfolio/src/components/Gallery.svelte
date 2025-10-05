@@ -2,20 +2,19 @@
 	import { X } from '@lucide/svelte';
 	import { fly, blur, fade } from 'svelte/transition';
 	import Image from './Image.svelte';
-	import { sanityImgUrl } from '@/lib/utils/sanityImgUrl';
 
-	type SanityImage = {
+	type GalleryImage = {
 		src: string;
 		alt: string;
 		blurHash: string | null;
 	};
 
 	type Props = {
-		images: SanityImage[];
+		images: GalleryImage[];
 	};
 	let { images }: Props = $props();
 
-	let selectedImage = $state<SanityImage | null>(null);
+	let selectedImage = $state<GalleryImage | null>(null);
 </script>
 
 <div class="grid grid-cols-1 gap-4 pt-8 sm:grid-cols-2">
@@ -43,7 +42,7 @@
 				out:fly={{ y: 200, duration: 150 }}
 			>
 				<img
-					src={sanityImgUrl(selectedImage.src).width(1200).quality(100).format('webp').url()}
+					src={selectedImage.src}
 					width="1200"
 					height="1200"
 					alt={selectedImage.alt}

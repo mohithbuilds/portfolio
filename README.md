@@ -1,7 +1,7 @@
 # Mohith's Portfolio
 
 Hi!
-This is a [TurboRepo](https://turbo.build/) containing my portfolio website. It contains two apps, the 'portfolio' and 'sanity'. The 'portfolio' app is a SvelteKit project that serves as the frontend of the website. The 'sanity' app is a Sanity Studio project that serves as the backend of the website and acts as a CMS.
+This is a [TurboRepo](https://turbo.build/) containing my portfolio website. It contains the 'portfolio' app, which is a SvelteKit project. The website uses markdown files for content management instead of a traditional CMS.
 
 ## Getting started
 
@@ -41,23 +41,22 @@ Copy the `.env.example` file to a new file called `.env`:
 cp .env.example .env
 ```
 
-create a symbolic link to the `.env` file in the `sanity` and `app` package, you need to use the full path to the `.env` file, hence the `$(pwd)` command. Execute this command in the root directory of the project:
+create a symbolic link to the `.env` file in the app package if needed.
 
-```zsh
-ln -s $(pwd)/.env $(pwd)/apps/sanity/.env
-ln -s $(pwd)/.env $(pwd)/apps/portfolio/.env
-```
+Content is now stored in markdown files in:
+- `/apps/portfolio/src/posts/` - Blog posts
+- `/apps/portfolio/src/projects/` - Project pages
 
-Fill in the environment variables in the `.env` file. The `SANITY_API_TOKEN` is the token you get from the Sanity dashboard. The `SANITY_PROJECT_ID` is the project ID you get from the Sanity dashboard. The `SANITY_DATASET` is the dataset you want to use in the Sanity project.
+Fill in the environment variables in the `.env` file based on the `.env.example` file.
 
 I use Turso as a quick and easy sqlite database for the app, you can sign up for free at [turso.dev](https://turso.dev) and get your API key. The `TURSO_AUTH_TOKEN` is the API key you get from Turso.
 
 ## Running the project
 
-Simply run the following command to start both the SvelteKit dev server and the Sanity Studio dev server:
+Simply run the following command to start the SvelteKit dev server:
 
 ```zsh
 turbo dev
 ```
 
-The SvelteKit dev server will be running on [localhost:3000](http://localhost:3000) and the Sanity Studio dev server will be running on [localhost:3333](http://localhost:3333).
+The SvelteKit dev server will be running on [localhost:3000](http://localhost:3000).

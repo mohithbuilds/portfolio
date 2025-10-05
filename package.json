@@ -9,7 +9,7 @@
 		"check": "turbo check",
 		"prettier": "prettier --write \"**/*.{ts,tsx,md,svelte,js,json,yaml}\"",
 		"prettier-check": "prettier --plugin-search-dir . --check .",
-		"sanity": "pnpm --filter @k/sanity",
+
 		"portfolio": "pnpm --filter @k/portfolio",
 		"knip": "knip"
 	},

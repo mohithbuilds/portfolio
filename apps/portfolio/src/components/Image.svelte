@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { cn } from '@/lib/utils';
-	import { sanityImgUrl } from '@/lib/utils/sanityImgUrl';
-	import { decodeBlurHash } from 'fast-blurhash';
+	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
+	import { cn } from '@/lib/utils';
+	import { decodeBlurHash } from 'fast-blurhash';
 
 	type Props = {
 		src: string;
@@ -45,7 +45,7 @@
 	></canvas>
 
 	<img
-		src={sanityImgUrl(src).width(800).quality(100).format('webp').url()}
+		{src}
 		{alt}
 		class={cn('h-full max-h-full w-full transform-gpu object-cover object-top', {
 			'blur-xs': loading,
