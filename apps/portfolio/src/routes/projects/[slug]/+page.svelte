@@ -7,10 +7,8 @@
 
 	import Divider from '@/components/Divider.svelte';
 	import ProjectTypeChip from '@/components/ProjectTypeChip.svelte';
-	import PortableText from '@/lib/portableText/PortableText.svelte';
 	import { scrollToTop } from '@/lib/utils';
 	import AnimatedCounter from '@/routes/AnimatedCounter.svelte';
-	import type { PortableTextBlock } from '@portabletext/types';
 
 	let { data } = $props();
 	let { project, nextProject, prevProject } = $derived(data);
@@ -66,11 +64,10 @@
 <Divider />
 
 <section class="prose text-foreground prose-bold:text-foreground! w-full max-w-full text-left leading-loose">
-	<!-- Not sure why we need the key here, but it seems to be necessary for the rich description to update -->
 	{#key project.title}
-		{#if project.richDescription}
-			<PortableText portableText={project.richDescription as PortableTextBlock[]} />
-		{:else}
+		{#if project.content}
+			{@html project.content}
+		{:else if project.description}
 			<p>
 				{project.description}
 			</p>

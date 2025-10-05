@@ -1,40 +1,36 @@
 import { getTotalLikesByPage } from '@/lib/db/methods';
-import { allProjectsQuery, homePageQuery, projectQuery } from '@/lib/server/queries';
-import { runQuery } from '@/lib/services/sanity';
-import type { EntryGenerator } from './$types';
+import { getAllProjects, getProject } from '@/lib/getProject';
+import { error } from '@sveltejs/kit';
+import type { EntryGenerator, PageServerLoad } from './$types';
 
-export const load = async ({ params }) => {
+export const load: PageServerLoad = async ({ params }) => {
 	const { slug } = params;
 
 	const [project, allProjects] = await Promise.all([
-		runQuery(projectQuery, {
-			parameters: {
-				slug,
-			},
-		}),
-		runQuery(homePageQuery),
+		getProject(slug),
+		getAllProjects(),
 	]);
 
-	if (!project || !allProjects) {
-		throw new Error('Project or home page not found');
+	if (!project) {
+		throw error(404, 'Project not found');
 	}
 
-	const projectIndex = allProjects?.findIndex((p) => p.slug === slug) ?? 0;
-	const nextProject = allProjects?.[projectIndex + 1] ?? null;
-	const prevProject = allProjects?.[projectIndex - 1] ?? null;
+	const projectIndex = allProjects.findIndex((p) => p.slug === slug);
+	const nextProject = allProjects[projectIndex + 1] ?? null;
+	const prevProject = allProjects[projectIndex - 1] ?? null;
 
 	return {
 		project,
-		nextProject,
-		prevProject,
+		nextProject: nextProject ? { title: nextProject.title, slug: nextProject.slug } : null,
+		prevProject: prevProject ? { title: prevProject.title, slug: prevProject.slug } : null,
 		slug,
 		likes: await getTotalLikesByPage(slug),
 	};
 };
 
 export const entries: EntryGenerator = async () => {
-	const allProjects = await runQuery(allProjectsQuery);
-	const slugs = allProjects.projects.map((p) => p.slug).filter((p) => p !== null);
+	const allProjects = await getAllProjects();
+	const slugs = allProjects.map((p) => p.slug);
 
 	return slugs.map((slug) => ({ slug }));
 };
