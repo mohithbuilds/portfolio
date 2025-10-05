@@ -1,0 +1,39 @@
+{
+	"name": "@k/sanity",
+	"private": true,
+	"version": "1.0.0",
+	"main": "package.json",
+	"license": "UNLICENSED",
+	"scripts": {
+		"dev": "sanity dev",
+		"start": "sanity start",
+		"build": "sanity build",
+		"deploy": "sanity deploy",
+		"deploy-graphql": "sanity graphql deploy",
+		"check": "tsc --noEmit"
+	},
+	"keywords": [
+		"sanity"
+	],
+	"dependencies": {
+		"@sanity/vision": "^3.88.3",
+		"groqd-playground": "^0.0.20",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-is": "^19.1.0",
+		"sanity": "^3.88.3",
+		"styled-components": "^6.1.18",
+		"zod": "^3.24.4"
+	},
+	"devDependencies": {
+		"@sanity/eslint-config-studio": "^5.0.2",
+		"@types/node": "^22.15.18",
+		"@types/react": "^19.1.4",
+		"eslint": "^9.27.0",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.3"
+	},
+	"engines": {
+		"node": ">= 14.18"
+	}
+}
