@@ -1,6 +1,6 @@
-# Kyrre Gjerstad's Portfolio
+# Mohith's Portfolio
 
-Hei!
+Hi!
 This is a [TurboRepo](https://turbo.build/) containing my portfolio website. It contains two apps, the 'portfolio' and 'sanity'. The 'portfolio' app is a SvelteKit project that serves as the frontend of the website. The 'sanity' app is a Sanity Studio project that serves as the backend of the website and acts as a CMS.
 
 ## Getting started
@@ -22,7 +22,7 @@ It is needed for the monorepo setup to work properly.
 To get started, clone the repository and install the dependencies:
 
 ```zsh
-gh repo clone kyrregjerstad/portfolio
+gh repo clone mohithbuilds/portfolio
 ```
 
 ```zsh
