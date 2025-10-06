@@ -11,7 +11,7 @@ keyFeatures: ['Feature 1', 'Feature 2', 'Feature 3']
 technologies: ['React', 'TypeScript', 'Tailwind CSS']
 images: [
   {
-    url: '/images/projects/example-project-1.jpg',
+    url: '/images/example-project-1.png',
     alt: 'Example Project Screenshot 1',
     metadata: {
       blurHash: 'LGF5]+Yk^6#M@-5c,1J5@[or[Q6.'
