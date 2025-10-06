@@ -60,3 +60,39 @@ turbo dev
 ```
 
 The SvelteKit dev server will be running on [localhost:3000](http://localhost:3000).
+
+
+## Tech Stack
+
+This project is built with a modern, full-stack tech stack that is designed to be fast, efficient, and easy to work with.
+
+### Core Technologies
+
+*   [**SvelteKit**](https://kit.svelte.dev/): A full-stack framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing.
+*   [**Turborepo**](https://turbo.build/): A high-performance build system for JavaScript and TypeScript codebases, used to manage this monorepo.
+*   [**pnpm**](https://pnpm.io/): A fast, disk space-efficient package manager.
+
+### Frontend
+
+*   [**Svelte**](https://svelte.dev/): A radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.
+*   [**Tailwind CSS**](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
+*   [**Vite**](https://vitejs.dev/): A next-generation frontend tooling that provides a faster and leaner development experience for modern web projects.
+*   [**PostHog**](https://posthog.com/): A developer-friendly, open-source product analytics platform.
+
+### Backend
+
+*   [**Turso**](https://turso.tech/): A distributed SQLite database platform that allows you to have a database that is close to your users.
+*   [**Drizzle ORM**](https://orm.drizzle.team/): A TypeScript ORM for SQL databases that provides a type-safe and intuitive API for interacting with your database.
+*   [**Mailjet**](https://www.mailjet.com/): A powerful email service provider that is used to send emails from the contact form.
+
+### Testing
+
+*   [**Playwright**](https://playwright.dev/): A framework for end-to-end testing of modern web apps.
+*   [**Vitest**](https://vitest.dev/): A blazing fast unit-test framework powered by Vite.
+
+### Deployment
+
+*   [**Vercel**](https://vercel.com/): A platform for deploying and hosting modern web applications.
+
+### Development Tools
+*   Coffee & Nvim
