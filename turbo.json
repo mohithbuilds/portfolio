@@ -5,7 +5,8 @@
             "outputs": ["dist/**"],
             "env": [
                 "PRIVATE_GITHUB_TOKEN",
-                "PRIVATE_SENDGRID_API_KEY",
+                "PRIVATE_MAILJET_API_KEY",
+                "PRIVATE_MAILJET_SECRET_KEY",
                 "TURSO_CONNECTION_URL",
                 "TURSO_AUTH_TOKEN",
                 "PUBLIC_POSTHOG_API_KEY",
@@ -13,12 +14,6 @@
                 "PUBLIC_PLAUSIBLE_SCRIPT_URL",
                 "GITHUB_CLIENT_ID",
                 "GITHUB_CLIENT_SECRET",
-                "OPENAI_API_KEY",
-                "R2_ACCOUNT_ID",
-                "R2_ACCESS_KEY_ID",
-                "R2_SECRET_ACCESS_KEY",
-                "R2_TOKEN",
-                "R2_BUCKET_NAME",
                 "GITHUB_USERNAME"
             ]
         },
@@ -30,7 +25,8 @@
             "cache": false,
             "env": [
                 "PRIVATE_GITHUB_TOKEN",
-                "PRIVATE_SENDGRID_API_KEY",
+                "PRIVATE_MAILJET_API_KEY",
+                "PRIVATE_MAILJET_SECRET_KEY",
                 "TURSO_CONNECTION_URL",
                 "TURSO_AUTH_TOKEN",
                 "PUBLIC_POSTHOG_API_KEY",
@@ -38,12 +34,6 @@
                 "PUBLIC_PLAUSIBLE_SCRIPT_URL",
                 "GITHUB_CLIENT_ID",
                 "GITHUB_CLIENT_SECRET",
-                "OPENAI_API_KEY",
-                "R2_ACCOUNT_ID",
-                "R2_ACCESS_KEY_ID",
-                "R2_SECRET_ACCESS_KEY",
-                "R2_TOKEN",
-                "R2_BUCKET_NAME",
                 "GITHUB_USERNAME"
             ]
         }
