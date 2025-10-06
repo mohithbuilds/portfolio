@@ -66,7 +66,7 @@
 <section class="prose text-foreground prose-bold:text-foreground! w-full max-w-full text-left leading-loose">
 	{#key project.title}
 		{#if project.content}
-			{@html project.content}
+			<svelte:component this={project.content} />
 		{:else if project.description}
 			<p>
 				{project.description}

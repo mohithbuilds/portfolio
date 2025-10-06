@@ -1,3 +1,4 @@
+import type { ComponentType } from 'svelte';
 import { z } from 'zod';
 
 const technologySchema = z.object({
@@ -52,7 +53,7 @@ export type Project = {
   }[];
   featured: boolean;
   order: number;
-  content: string;
+  content: ComponentType;
 };
 
 export async function getProject(slug: string): Promise<Project | null> {
@@ -68,7 +69,7 @@ export async function getProject(slug: string): Promise<Project | null> {
     // Transform the data to match the expected structure
     const transformedProject: Project = {
       ...project.data.metadata,
-      content: project.data.default?.render?.().html || '',
+      content: project.data.default,
       technologies: project.data.metadata.technologies.map(tech => ({ title: tech })),
       images: project.data.metadata.images.map(img => ({
         asset: {
@@ -112,7 +113,7 @@ export async function getAllProjects(): Promise<Project[]> {
       keyFeatures: project.metadata.keyFeatures,
       featured: project.metadata.featured,
       order: project.metadata.order,
-      content: project.default?.render?.().html || '',
+      content: project.default,
       technologies: project.metadata.technologies.map(tech => ({ title: tech })),
       images: project.metadata.images.map(img => ({
         asset: {
