@@ -6,7 +6,7 @@ layout: blog
 published: true
 publishedAt: '2025-05-16'
 categories: ['testing', 'automation', 'web development', 'quality assurance']
-author: 'Kyrre Gjerstad'
+author: 'Mohith Nagendra'
 description: 'A comprehensive guide to writing effective and maintainable Playwright tests, covering best practices, patterns, and real-world examples.'
 seoTitle: 'The Pragmatic Guide to Playwright Testing: Best Practices & Patterns'
 seoDescription: 'Learn how to write effective and maintainable Playwright tests with this comprehensive guide. Covers best practices, patterns, and real-world examples from production environments.'
