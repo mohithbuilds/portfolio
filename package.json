@@ -16,7 +16,7 @@
 		"@types/node": "^22.15.18",
 		"knip": "^5.56.0",
 		"prettier": "3.5.3",
-		"prettier-plugin-tailwindcss": "^0.6.11",
+		"prettier-plugin-tailwindcss": "^0.6.14",
 		"turbo": "^2.5.8",
 		"typescript": "^5.8.3",
 		"unique-names-generator": "^4.7.1",
