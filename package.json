@@ -9,7 +9,6 @@
 		"check": "turbo check",
 		"prettier": "prettier --write \"**/*.{ts,tsx,md,svelte,js,json,yaml}\"",
 		"prettier-check": "prettier --plugin-search-dir . --check .",
-
 		"portfolio": "pnpm --filter @k/portfolio",
 		"knip": "knip"
 	},
@@ -18,7 +17,7 @@
 		"knip": "^5.56.0",
 		"prettier": "3.5.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"turbo": "^2.5.3",
+		"turbo": "^2.5.8",
 		"typescript": "^5.8.3",
 		"unique-names-generator": "^4.7.1",
 		"wrangler": "^4.15.2"
