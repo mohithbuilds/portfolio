@@ -23,7 +23,7 @@
 				</h1>
 				<span class="flex items-center gap-1 text-pretty text-sm font-normal">
 					<MapPin size={12} />
-					Berlin
+					Seattle
 				</span>
 			</div>
 
