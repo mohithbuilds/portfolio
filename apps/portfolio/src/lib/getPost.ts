@@ -9,7 +9,7 @@ const postSchema = z.object({
 		published: z.boolean().default(false),
 		publishedAt: z.string(),
 		categories: z.array(z.string()).default([]),
-		author: z.string().default('Kyrre Gjerstad'),
+		author: z.string().default('Mohith Nagendra'),
 		description: z.string().optional(),
 		seoTitle: z.string().optional(),
 		seoDescription: z.string().optional(),

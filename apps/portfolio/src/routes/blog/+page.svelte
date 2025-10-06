@@ -6,9 +6,9 @@
 
 	let { data } = $props();
 
-	const pageTitle = 'Blog | Kyrre Gjerstad';
+	const pageTitle = 'Blog | Mohith Nagendra';
 	const description =
-		'Articles and tutorials about web development, testing, and software engineering by Kyrre Gjerstad.';
+		'Articles and tutorials about web development, testing, and software engineering by Mohith Nagendra.';
 	const canonicalUrl = 'https://kyrre.dev/blog';
 
 	// Get unique categories

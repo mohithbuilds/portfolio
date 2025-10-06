@@ -19,7 +19,7 @@
 				<h1
 					class="flex items-end gap-2 text-pretty break-words text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl"
 				>
-					Hei, I'm Kyrre!
+					Hi, I'm Mohith!
 				</h1>
 				<span class="flex items-center gap-1 text-pretty text-sm font-normal">
 					<MapPin size={12} />
@@ -42,7 +42,7 @@
 
 			<div class="flex items-center gap-3">
 				<a
-					href="https://github.com/kyrregjerstad"
+					href="https://github.com/mohithbuilds"
 					target="_blank"
 					class="transition-transform hover:scale-110"
 					onclick={() => posthog.capture('social_link_click', { target: 'github', location: 'hero' })}
@@ -51,7 +51,7 @@
 					<GitHubIconAnimated size={2.5} />
 				</a>
 				<a
-					href="https://www.linkedin.com/in/kyrre-gjerstad/"
+					href="https://www.linkedin.com/in/mohith-n/"
 					target="_blank"
 					class="transition-transform hover:scale-110"
 					onclick={() => posthog.capture('social_link_click', { target: 'linkedin', location: 'hero' })}
@@ -60,7 +60,7 @@
 					<LinkedInAnimated size={2.5} />
 				</a>
 				<a
-					href="https://bsky.app/profile/kyrre.dev"
+					href="mailto:mohith.n2022@gmail.com"
 					target="_blank"
 					class="transition-transform hover:scale-110"
 					onclick={() => posthog.capture('social_link_click', { target: 'bsky', location: 'hero' })}

@@ -11,7 +11,7 @@
 <footer class="flex w-full flex-col items-center justify-center gap-8 py-12 text-sm">
 	<div class="flex items-center justify-center gap-2">
 		<a
-			href="https://www.linkedin.com/in/kyrre-gjerstad/"
+			href="https://www.linkedin.com/in/mohith-n/"
 			target="_blank"
 			onclick={() => posthog.capture('social_link_click', { target: 'linkedin', location: 'footer' })}
 		>
@@ -19,7 +19,7 @@
 			<LinkedInAnimated />
 		</a>
 		<a
-			href="https://github.com/kyrregjerstad"
+			href="https://github.com/mohithbuilds"
 			target="_blank"
 			onclick={() => posthog.capture('social_link_click', { target: 'github', location: 'footer' })}
 		>
@@ -27,7 +27,7 @@
 			<GitHubIconAnimated size={4.5} />
 		</a>
 		<a
-			href="https://bsky.app/profile/kyrre.dev"
+			href="mailto:mohith.n2022@gmail.com"
 			target="_blank"
 			class="transition-transform hover:scale-110"
 			onclick={() => posthog.capture('social_link_click', { target: 'bsky', location: 'footer' })}
@@ -37,11 +37,11 @@
 		</a>
 	</div>
 	<div class="flex items-center justify-center gap-2">
-		<a class="hover:underline" href="/about/kyrregjerstad">About</a>
+		<a class="hover:underline" href="/about/mohithnagendra">About</a>
 		<a class="hover:underline" href="/blog">Blog</a>
 	</div>
 
 	<p class="">
-		Made with <HeartIcon class="fill-foreground inline size-4 -translate-y-px" /> by Kyrre Gjerstad
+		Made with <HeartIcon class="fill-foreground inline size-4 -translate-y-px" /> by Mohith Nagendra
 	</p>
 </footer>

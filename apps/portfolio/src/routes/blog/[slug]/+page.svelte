@@ -14,7 +14,7 @@
 </script>
 
 <svelte:head>
-	<title>{pageTitle} | Kyrre Gjerstad</title>
+	<title>{pageTitle} | Mohith Nagendra</title>
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords.join(', ')} />
 	<meta name="author" content={data.meta.author} />
@@ -47,7 +47,7 @@
 			<p>
 				<time datetime={data.meta.publishedAt}>{formatDate(data.meta.publishedAt)}</time>
 				<span>by</span>
-				<a href="/about/kyrregjerstad" rel="author">{data.meta.author}</a>
+				<a href="/about/mohithnagendra" rel="author">{data.meta.author}</a>
 			</p>
 		</header>
 		<div>

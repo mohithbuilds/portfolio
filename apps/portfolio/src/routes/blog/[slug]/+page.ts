@@ -16,8 +16,8 @@ export const load: PageLoad = async ({ params, data }) => {
 			content: post.default,
 			meta: post.metadata,
 			socials: {
-				siteName: 'Kyrre Gjerstad | Blog',
-				title: `${post.metadata.title} | Kyrre Gjerstad`,
+				siteName: 'Mohith Nagendra | Blog',
+				title: `${post.metadata.title} | Mohith Nagendra`,
 				description: post.metadata.description,
 				image: 'https://kyrre.dev/images/og-kyrre-gjerstad-blog.jpg',
 			},

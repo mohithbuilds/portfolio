@@ -2,10 +2,10 @@
 </script>
 
 <svelte:head>
-	<title>About Kyrre Gjerstad - Full Stack Developer in Berlin</title>
+	<title>About Mohith Nagendra - Full Stack Developer</title>
 	<meta
 		name="description"
-		content="Kyrre Gjerstad is a Full Stack Developer based in Berlin, specializing in TypeScript, Next.js, and building performant web applications. Learn more about his experience and approach to web development."
+		content="Mohith Nagendra is a Full Stack Developer based in Berlin, specializing in TypeScript, Next.js, and building performant web applications. Learn more about his experience and approach to web development."
 	/>
 </svelte:head>
 
@@ -15,22 +15,22 @@
 			<div class="ring-border mb-6 h-48 w-48 overflow-hidden rounded-full ring-2">
 				<img
 					src="/images/kyrre-gjerstad-profile-1.webp"
-					alt="Kyrre Gjerstad"
+					alt="Mohith Nagendra"
 					class="h-full w-full object-cover"
 					width="192"
 					height="192"
 				/>
 			</div>
 		</div>
-		<h1 class="mb-4 text-center text-4xl font-bold">About Kyrre Gjerstad</h1>
-		<p class="text-muted-foreground text-center text-lg">Full Stack Developer based in Berlin</p>
+		<h1 class="mb-4 text-center text-4xl font-bold">About Mohith Nagendra</h1>
+		<p class="text-muted-foreground text-center text-lg">Full Stack Developer</p>
 	</header>
 
 	<div class="prose prose-lg dark:prose-invert">
 		<section>
 			<h2>Background</h2>
 			<p>
-				Hei! I'm Kyrre, a Full Stack Developer based in Berlin with a passion for building exceptional web applications.
+				Hi! I'm Mohith, a Full Stack Developer based in Berlin with a passion for building exceptional web applications.
 				I specialize in TypeScript and Next.js, focusing on creating clean, performant solutions that address real
 				business challenges.
 			</p>

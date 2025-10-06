@@ -79,7 +79,7 @@
 	<Gallery
 		images={project.images.map((image, i) => ({
 			src: image.asset?.url ?? '',
-			alt: `Kyrre Gjerstad - ${project.title} screenshot ${i + 1}`,
+			alt: `Mohith Nagendra - ${project.title} screenshot ${i + 1}`,
 			blurHash: image.asset?.metadata?.blurHash ?? '',
 		}))}
 	/>
