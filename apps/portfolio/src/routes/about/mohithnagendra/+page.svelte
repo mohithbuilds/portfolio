@@ -14,7 +14,7 @@
 		<div class="mb-8 flex flex-col items-center">
 			<div class="ring-border mb-6 h-48 w-48 overflow-hidden rounded-full ring-2">
 				<img
-					src="/images/kyrre-gjerstad-profile-1.webp"
+					src="/images/Mohith-Grad.jpg"
 					alt="Mohith Nagendra"
 					class="h-full w-full object-cover"
 					width="192"
