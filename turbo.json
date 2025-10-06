@@ -11,7 +11,6 @@
                 "TURSO_AUTH_TOKEN",
                 "PUBLIC_POSTHOG_API_KEY",
                 "PUBLIC_POSTHOG_HOST",
-                "PUBLIC_PLAUSIBLE_SCRIPT_URL",
                 "GITHUB_CLIENT_ID",
                 "GITHUB_CLIENT_SECRET",
                 "GITHUB_USERNAME"
@@ -31,7 +30,6 @@
                 "TURSO_AUTH_TOKEN",
                 "PUBLIC_POSTHOG_API_KEY",
                 "PUBLIC_POSTHOG_HOST",
-                "PUBLIC_PLAUSIBLE_SCRIPT_URL",
                 "GITHUB_CLIENT_ID",
                 "GITHUB_CLIENT_SECRET",
                 "GITHUB_USERNAME"
