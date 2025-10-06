@@ -24,7 +24,6 @@
 		"@k/eslint-config": "workspace:*",
 		"@pixi/devtools": "^2.0.1",
 		"@playwright/test": "^1.52.0",
-
 		"@sveltejs/adapter-vercel": "^5.7.2",
 		"@sveltejs/kit": "^2.21.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
@@ -62,9 +61,6 @@
 		"@number-flow/svelte": "^0.3.7",
 		"@oslojs/crypto": "^1.0.1",
 		"@oslojs/encoding": "^1.1.0",
-
-		"@sendgrid/mail": "^8.1.5",
-		"@uploadthing/svelte": "^7.3.1",
 		"arctic": "^3.6.1",
 		"clsx": "^2.1.1",
 		"drizzle-orm": "^0.43.1",
@@ -72,7 +68,7 @@
 		"gsap": "^3.13.0",
 		"motion": "^12.12.1",
 		"nanoid": "^5.1.5",
-		"openai": "^4.100.0",
+		"node-mailjet": "^6.0.9",
 		"pixi.js": "^8.9.2",
 		"posthog-js": "^1.242.2",
 		"simple-icons": "^14.13.0",

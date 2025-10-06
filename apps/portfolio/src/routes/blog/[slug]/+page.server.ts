@@ -7,7 +7,6 @@ import { fail, message, superValidate } from 'sveltekit-superforms';
 import { zod } from 'sveltekit-superforms/adapters';
 import { error } from '@sveltejs/kit';
 import { getAllPosts, getPost } from '@/lib/getPost';
-import { moderateContent } from '@/lib/server/moderation';
 
 export const load = (async ({ params, locals }) => {
 	const post = await getPost(params.slug);
