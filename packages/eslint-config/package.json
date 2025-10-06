@@ -27,7 +27,7 @@
 		"eslint-plugin-jsdoc": "^50.6.17",
 		"eslint-plugin-markdown": "^5.1.0",
 		"eslint-plugin-prettier": "^5.4.0",
-		"eslint-plugin-svelte": "^3.8.0",
+		"eslint-plugin-svelte": "^3.12.4",
 		"globals": "^16.1.0",
 		"svelte-eslint-parser": "^1.2.0",
 		"typescript-eslint": "^8.32.1"
