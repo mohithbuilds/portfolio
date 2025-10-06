@@ -1,5 +1,5 @@
 <script>
-	import { PUBLIC_POSTHOG_API_KEY } from '$env/static/public';
+	import { PRIVATE_POSTHOG_API_KEY } from '$env/static/public';
 	// import { PUBLIC_PLAUSIBLE_SCRIPT_URL, PUBLIC_POSTHOG_API_KEY } from '$env/static/public';
 
 
@@ -8,7 +8,7 @@
 
 	$effect(() => {
 		if (browser) {
-			posthog.init(PUBLIC_POSTHOG_API_KEY, {
+			posthog.init(PRIVATE_POSTHOG_API_KEY, {
 				api_host: 'https://eu.i.posthog.com',
 				person_profiles: 'always',
 				capture_pageview: false,
