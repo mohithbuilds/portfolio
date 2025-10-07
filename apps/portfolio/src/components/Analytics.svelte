@@ -19,5 +19,5 @@
 </script>
 <!---->
 <!-- <svelte:head> -->
-<!-- 	<script defer data-domain="kyrre.dev" src={PUBLIC_PLAUSIBLE_SCRIPT_URL}></script> -->
+<!-- 	<script defer data-domain="mohithn.vercel.app" src={PUBLIC_PLAUSIBLE_SCRIPT_URL}></script> -->
 <!-- </svelte:head> -->

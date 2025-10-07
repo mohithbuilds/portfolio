@@ -5,39 +5,36 @@ export const load: LayoutServerLoad = async ({ locals }) => {
 	const { firstVisit } = locals;
 
 	const SEO = {
-		title: 'Mohith Nagendra | Fullstack Typescript Developer',
+		title: 'Mohith Nagendra | Software Development Engineer',
 		description:
-			'Passionate about creating visually appealing and functional web applications using SvelteKit and NextJS. Explore my portfolio and discover my work in building clean, efficient, and user-friendly digital experiences.',
+			'Software Development Engineer specializing in building scalable, reliable, and data-intensive systems. Explore Mohith Nagendra’s portfolio to see work in backend engineering, APIs, data pipelines, and high-performance systems optimized for real-world impact.',
 		keywords: [
+			'Software Development Engineer',
+			'backend systems',
+			'scalable systems',
+			'data pipelines',
+			'APIs',
+			'high-performance computing',
+			'systems engineering',
 			'fullstack developer',
-			'Typescript',
-			'SvelteKit',
-			'NextJS',
-			'web development',
-			'user experience',
-			'UX',
-			'web applications',
 			'portfolio',
 		],
 		author: 'Mohith Nagendra',
 
 		openGraph: {
-			url: 'https://kyrre.dev',
-			title: 'Mohith Nagendra | Fullstack Typescript Developer',
+			url: 'https://mohithn.vercel.app',
+			title: 'Mohith Nagendra | Software Development Engineer',
 			description:
-				'Explore the portfolio of Mohith Nagendra, a fullstack developer specializing in SvelteKit and NextJS.',
-			image: 'https://kyrre.dev/images/og-kyrre-gjerstad.jpg',
+				'Explore the portfolio of Mohith Nagendra, a Software Development Engineer specializing in backend systems, APIs, and scalable data pipelines.',
+			image: 'https://mohithn.vercel.app/images/og-mohithn.png',
 		},
 
-		twitter: {
-			url: 'https://kyrre.dev',
-			title: 'Mohith Nagendra | Fullstack Typescript Developer',
+		linkedin: {
+			url: 'https://mohithn.vercel.app',
+			title: 'Mohith Nagendra | Software Development Engineer',
 			description:
-				'Discover the work of Mohith Nagendra, a fullstack developer passionate about creating functional and visually appealing web applications using SvelteKit and NextJS.',
-			image: 'https://kyrre.dev/images/og-kyrre-gjerstad.jpg',
-			card: 'summary_large_image',
-			site: '@kyrregjerstad',
-			creator: '@kyrregjerstad',
+				'Discover the work of Mohith Nagendra, a Software Development Engineer passionate about building scalable, reliable systems, APIs, and data pipelines optimized for performance and real-world impact.',
+			image: 'https://mohithn.vercel.app/images/mohith.jpeg',
 		},
 	} satisfies SEOType;
 

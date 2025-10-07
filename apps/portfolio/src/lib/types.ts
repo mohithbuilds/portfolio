@@ -12,7 +12,14 @@ export type SEO = {
 		image: string;
 	};
 
-	twitter: {
+	linkedin?: {
+		url: string;
+		title: string;
+		description: string;
+		image: string;
+	};
+
+	twitter?: {
 		url: string;
 		title: string;
 		description: string;

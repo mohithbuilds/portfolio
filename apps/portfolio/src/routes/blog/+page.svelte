@@ -9,7 +9,7 @@
 	const pageTitle = 'Blog | Mohith Nagendra';
 	const description =
 		'Articles and tutorials about web development, testing, and software engineering by Mohith Nagendra.';
-	const canonicalUrl = 'https://kyrre.dev/blog';
+	const canonicalUrl = 'https://mohithn.vercel.app/blog';
 
 	// Get unique categories
 	const categories = [...new Set(data.posts.flatMap((post) => post.categories))];
@@ -31,14 +31,14 @@
 	<meta property="og:url" content={canonicalUrl} />
 	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content="https://kyrre.dev/images/og-kyrre-gjerstad-blog.jpg" />
+	<meta property="og:image" content="https://mohithn.vercel.app/images/og-mohithn.png" />
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content={canonicalUrl} />
 	<meta name="twitter:title" content={pageTitle} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content="https://kyrre.dev/images/og-kyrre-gjerstad-blog.jpg" />
+	<meta name="twitter:image" content="https://mohithn.vercel.app/images/og-mohithn.png" />
 </svelte:head>
 
 <div class="mx-auto max-w-[1200px] px-6 py-12">

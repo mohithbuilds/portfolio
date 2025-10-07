@@ -2,7 +2,7 @@
 title: 'Portfolio Website'
 slug: 'portfolio-website'
 description: 'A modern portfolio website built with SvelteKit, featuring markdown-based content management'
-href: 'https://kyrre.dev'
+href: 'https://mohithn.vercel.app'
 linkTitle: 'Visit Site'
 gitHubLink: 'https://github.com/mohithbuilds/portfolio'
 client: 'Personal'

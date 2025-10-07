@@ -19,7 +19,7 @@ export const load: PageLoad = async ({ params, data }) => {
 				siteName: 'Mohith Nagendra | Blog',
 				title: `${post.metadata.title} | Mohith Nagendra`,
 				description: post.metadata.description,
-				image: 'https://kyrre.dev/images/og-kyrre-gjerstad-blog.jpg',
+				image: 'https://mohithn.vercel.app/images/og-mohithn.png',
 			},
 		};
 	} catch (e) {
