@@ -27,13 +27,15 @@
 		<meta property="og:image" content={openGraph.image} />
 
 		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content={twitter.url} />
-		<meta property="twitter:title" content={twitter.title} />
-		<meta property="twitter:description" content={twitter.description} />
-		<meta property="twitter:image" content={twitter.image} />
-		<meta property="twitter:card" content={twitter.card} />
-		<meta property="twitter:site" content={twitter.site} />
-		<meta property="twitter:creator" content={twitter.creator} />
+		{#if twitter}
+			<meta property="twitter:card" content="summary_large_image" />
+			<meta property="twitter:url" content={twitter.url} />
+			<meta property="twitter:title" content={twitter.title} />
+			<meta property="twitter:description" content={twitter.description} />
+			<meta property="twitter:image" content={twitter.image} />
+			<meta property="twitter:card" content={twitter.card} />
+			<meta property="twitter:site" content={twitter.site} />
+			<meta property="twitter:creator" content={twitter.creator} />
+		{/if}
 	{/if}
 </svelte:head>

@@ -18,7 +18,7 @@
 		"db:migrate": "drizzle-kit migrate",
 		"db:push": "drizzle-kit push",
 		"db:studio": "drizzle-kit studio",
-		"postbuild": "npx svelte-sitemap --out-dir .vercel/output/static --domain https://www.kyrre.dev"
+		"postbuild": "npx svelte-sitemap --out-dir .vercel/output/static --domain https://mohithn.vercel.app"
 	},
 	"devDependencies": {
 		"@k/eslint-config": "workspace:*",
