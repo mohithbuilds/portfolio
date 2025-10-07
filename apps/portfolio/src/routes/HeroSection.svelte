@@ -21,22 +21,23 @@
 				>
 					Hi, I'm Mohith!
 				</h1>
-				<span class="flex items-center gap-1 text-pretty text-sm font-normal">
+				<span class="flex items-center gap-1 text-pretty text-sm font-normal mt-2">
 					<MapPin size={12} />
 					Seattle
 				</span>
 			</div>
 
-			<h2 class="text-pretty sm:text-lg lg:text-xl">
-				I build full-stack web applications with TypeScript, specializing in <strong>Next.js</strong> and
-				<strong>SvelteKit</strong>.
+
+
+			<h2 class="text-pretty prose sm:text-lg lg:text-xl">
+				I build <strong>scalable, reliable, and data-intensive</strong> systems, including backend services, APIs, and data pipelines, optimized for <strong>high throughput, low latency</strong>, and real-world impact.
 			</h2>
 			<!-- TODO: idea - make the text crumble or some other effect when the gradient comes over the text -->
 			<p class="prose sm:text-lg">
-				I develop clean, performant solutions that solve real business problems. My work spans from crafting intuitive
-				user interfaces to designing scalable backend systems. Check out my projects below to see how I've helped
-				companies ship better products faster.
+				I code with business purpose, crafting efficient, clean, and maintainable solutions that respect strong design principles and deliver measurable value.
+				My work focuses on building systems that are fault-tolerant, high-performing, and resilient, helping organizations solve complex technical and business challenges through thoughtful design and precise implementation.
 			</p>
+
 
 			<AnimatedCounter {initialLikes} slug="/" />
 
