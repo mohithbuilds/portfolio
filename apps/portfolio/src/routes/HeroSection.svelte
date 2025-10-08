@@ -14,7 +14,7 @@
 	<div
 		class="relative flex min-h-[calc(100dvh-5rem)] w-full flex-col sm:min-h-[calc(100dvh-8rem)] sm:justify-center sm:py-8"
 	>
-		<div class="hero-text flex flex-col gap-8 sm:text-justify">
+		<div class="hero-text flex flex-col gap-4 sm:gap-8 sm:text-justify">
 			<div>
 				<h1
 					class="flex items-end gap-2 text-pretty break-words text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl"
