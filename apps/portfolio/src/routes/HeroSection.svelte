@@ -39,36 +39,38 @@
 			</p>
 
 
-			<AnimatedCounter {initialLikes} slug="/" />
+			<div class="flex flex-col gap-3">
+				<AnimatedCounter {initialLikes} slug="/" />
 
-			<div class="flex items-center gap-3">
-				<a
-					href="https://github.com/mohithbuilds"
-					target="_blank"
-					class="transition-transform hover:scale-110"
-					onclick={() => posthog.capture('social_link_click', { target: 'github', location: 'hero' })}
-				>
-					<span class="sr-only">GitHub</span>
-					<GitHubIconAnimated size={2.5} />
-				</a>
-				<a
-					href="https://www.linkedin.com/in/mohith-n/"
-					target="_blank"
-					class="transition-transform hover:scale-110"
-					onclick={() => posthog.capture('social_link_click', { target: 'linkedin', location: 'hero' })}
-				>
-					<span class="sr-only">LinkedIn</span>
-					<LinkedInAnimated size={2.5} />
-				</a>
-				<a
-					href="mailto:mohith.n2022@gmail.com"
-					target="_blank"
-					class="transition-transform hover:scale-110"
-					onclick={() => posthog.capture('social_link_click', { target: 'bsky', location: 'hero' })}
-				>
-					<span class="sr-only">BSky</span>
-					<BskyAnimated size={2.3} />
-				</a>
+				<div class="flex items-center gap-3">
+					<a
+						href="https://github.com/mohithbuilds"
+						target="_blank"
+						class="transition-transform hover:scale-110"
+						onclick={() => posthog.capture('social_link_click', { target: 'github', location: 'hero' })}
+					>
+						<span class="sr-only">GitHub</span>
+						<GitHubIconAnimated size={2.5} />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/mohith-n/"
+						target="_blank"
+						class="transition-transform hover:scale-110"
+						onclick={() => posthog.capture('social_link_click', { target: 'linkedin', location: 'hero' })}
+					>
+						<span class="sr-only">LinkedIn</span>
+						<LinkedInAnimated size={2.5} />
+					</a>
+					<a
+						href="mailto:mohith.n2022@gmail.com"
+						target="_blank"
+						class="transition-transform hover:scale-110"
+						onclick={() => posthog.capture('social_link_click', { target: 'bsky', location: 'hero' })}
+					>
+						<span class="sr-only">BSky</span>
+						<BskyAnimated size={2.3} />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
