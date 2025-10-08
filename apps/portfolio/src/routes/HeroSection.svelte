@@ -34,7 +34,7 @@
 			</h2>
 			<!-- TODO: idea - make the text crumble or some other effect when the gradient comes over the text -->
 			<p class="prose sm:text-lg">
-				I code with business purpose, crafting efficient, clean, and maintainable solutions that respect strong design principles and deliver measurable value.
+				I code with purpose, crafting efficient, clean, and maintainable solutions that respect strong design principles and deliver measurable value.
 				My work focuses on building systems that are fault-tolerant, high-performing, and resilient, helping organizations solve complex technical and business challenges through thoughtful design and precise implementation.
 			</p>
 
