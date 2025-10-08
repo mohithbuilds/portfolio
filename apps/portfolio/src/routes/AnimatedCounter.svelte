@@ -96,7 +96,7 @@
 	}
 </script>
 
-<div class="relative flex w-fit gap-2">
+<div class="relative flex w-fit gap-2 pl-1">
 	<HeartButton
 		{isMaxCountReached}
 		{totalLikesByUser}
