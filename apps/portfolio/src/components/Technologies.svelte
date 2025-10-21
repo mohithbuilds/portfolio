@@ -24,6 +24,11 @@
 
 	const technologies: Technology[] = [
 		{
+			name: 'Jave',
+			url: 'https://www.java.com/',
+			icon: siJava,
+		},
+		{
 			name: 'TypeScript',
 			url: 'https://typescriptlang.org',
 			icon: siTypescript,
