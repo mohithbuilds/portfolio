@@ -3,6 +3,7 @@
 	import {
 		siDocker,
 		siDrizzle,
+		siJava,
 		siNextdotjs,
 		siPostgresql,
 		siReact,
