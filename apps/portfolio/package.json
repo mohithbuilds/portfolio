@@ -29,7 +29,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@tailwindcss/postcss": "^4.1.14",
 		"@tailwindcss/typography": "^0.5.16",
-		"@tailwindcss/vite": "^4.1.7",
+		"@tailwindcss/vite": "^4.1.16",
 		"bits-ui": "1.4.8",
 		"drizzle-kit": "^0.31.1",
 		"mdsvex": "^0.12.6",
