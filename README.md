@@ -96,3 +96,8 @@ This project is built with a modern, full-stack tech stack that is designed to b
 
 ### Development Tools
 *   Coffee & Nvim
+
+## TODO
+- Add the bar functionality to be able to navigate better. this is complex in the sense that we don't know where it should be in the UI.
+- Add picture where you can move it around similar to the cheggin implementation
+- Add `Home` button at the bottom where `About` and `Blog` are.

@@ -1,15 +1,23 @@
 <script lang="ts">
 	import { cn } from '@/lib/utils';
 	import {
+		siCplusplus,
 		siDocker,
-		siDrizzle,
-		siJava,
+		siGit,
+		siGo,
+		siIterm2,
+		siOpenjdk,
+		siKotlin,
 		siNextdotjs,
+		siNvidia,
 		siPostgresql,
+		siPython,
+		siPytorch,
 		siReact,
+		siRust,
 		siShadcnui,
-		siSvelte,
-		siTailwindcss,
+		siSwift,
+		siTerraform,
 		siTypescript,
 	} from 'simple-icons';
 
@@ -25,14 +33,44 @@
 
 	const technologies: Technology[] = [
 		{
+			name: 'Python',
+			url: 'https://www.python.org/',
+			icon: siPython,
+		},
+		{
+			name: 'C++',
+			url: 'https://cplusplus.com/',
+			icon: siCplusplus,
+		},
+		{
+			name: 'Go',
+			url: 'https://go.dev/',
+			icon: siGo,
+		},
+		{
 			name: 'Java',
-			url: 'https://www.java.com/',
-			icon: siJava,
+			url: 'https://openjdk.org/',
+			icon: siOpenjdk,
+		},
+		{
+			name: 'Kotlin',
+			url: 'https://kotlinlang.org/',
+			icon: siKotlin,
+		},
+		{
+			name: 'Rust',
+			url: 'https://rust-lang.org/',
+			icon: siRust,
 		},
 		{
 			name: 'TypeScript',
 			url: 'https://typescriptlang.org',
 			icon: siTypescript,
+		},
+		{
+			name: 'Swift',
+			url: 'https://www.swift.org/',
+			icon: siSwift,
 		},
 		{
 			name: 'React',
@@ -45,24 +83,9 @@
 			icon: siNextdotjs,
 		},
 		{
-			name: 'SvelteKit',
-			url: 'https://kit.svelte.dev',
-			icon: siSvelte,
-		},
-		{
-			name: 'Tailwind',
-			url: 'https://tailwindcss.com',
-			icon: siTailwindcss,
-		},
-		{
 			name: 'PostgreSQL',
 			url: 'https://postgresql.org',
 			icon: siPostgresql,
-		},
-		{
-			name: 'Drizzle',
-			url: 'https://orm.drizzle.team',
-			icon: siDrizzle,
 		},
 		{
 			name: 'Docker',
@@ -70,9 +93,29 @@
 			icon: siDocker,
 		},
 		{
-			name: 'Shadcn',
-			url: 'https://ui.shadcn.com',
-			icon: siShadcnui,
+			name: "Terraform",
+			url: 'https://developer.hashicorp.com/terraform',
+			icon: siTerraform,
+		},
+		{
+			name: 'PyTorch',
+			url: 'https://pytorch.org/',
+			icon: siPytorch,
+		},
+		{
+			name: 'CUDA',
+			url: 'https://developer.nvidia.com/cuda-toolkit',
+			icon: siNvidia,
+		},
+		{
+			name: 'Git',
+			url: '',
+			icon: siGit,
+		},
+		{
+			name: 'Shell Scripting',
+			url: '',
+			icon: siIterm2,
 			filler: true,
 		},
 	];
