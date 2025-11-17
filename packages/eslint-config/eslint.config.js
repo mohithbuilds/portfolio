@@ -1,4 +1,5 @@
 import eslint from '@eslint/js';
+import markdown from '@eslint/markdown';
 import pluginImport from 'eslint-plugin-import';
 import svelteEslint from 'eslint-plugin-svelte';
 import globals from 'globals';
@@ -39,7 +40,7 @@ const ignores = [
 /** @type {import('eslint').Linter.Config[]} */
 export default [
 	{ ignores },
-	// ...markdown.configs.recommended,
+	...markdown.configs.recommended,
 	eslint.configs.recommended,
 	...tsEslint.configs.recommended,
 	...svelteEslint.configs['flat/prettier'],
