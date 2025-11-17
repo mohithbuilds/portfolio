@@ -82,6 +82,6 @@
 	<button
 		type="submit"
 		class="bg-background border-muted-foreground focus:border-accent-foreground focus:outline-accent-foreground border p-4 focus:outline-hidden"
-		>send</button
+		>Send</button
 	>
 </form>
