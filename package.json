@@ -22,5 +22,5 @@
 		"unique-names-generator": "^4.7.1",
 		"wrangler": "^4.15.2"
 	},
-	"packageManager": "pnpm@10.1.0"
+	"packageManager": "pnpm@10.22.0"
 }
