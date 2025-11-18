@@ -5,10 +5,11 @@
 	import BskyAnimated from '@/components/icons/BskyAnimated.svelte';
 	import { HeartIcon } from '@lucide/svelte';
 	import posthog from 'posthog-js';
+	import { scrollToTop } from '@/lib/utils';
 </script>
 
 <Divider class="my-0 sm:my-0" />
-<footer class="flex w-full flex-col items-center justify-center gap-8 py-12 text-sm">
+<footer class="flex w-full flex-col items-center justify-center gap-4 py-12 text-sm">
 	<div class="flex items-center justify-center gap-2">
 		<a
 			href="https://www.linkedin.com/in/mohith-n/"
@@ -36,12 +37,13 @@
 			<BskyAnimated size={2.3} />
 		</a>
 	</div>
-	<div class="flex items-center justify-center gap-2">
-		<a class="hover:underline" href="/about/mohithnagendra">About</a>
-		<a class="hover:underline" href="/blog">Blog</a>
+	<div class="flex items-center justify-center gap-2 mb-8">
+		<a class="hover:underline w-16 text-right" href="/about/mohithnagendra" onclick={scrollToTop}>About</a>
+		<a class="hover:underline text-center text-base" href="/" onclick={scrollToTop}>Home</a>
+		<a class="hover:underline w-16 text-left" href="/blog" onclick={scrollToTop}>Blog</a>
 	</div>
 
-	<p class="">
+	<p class="text-center">
 		Made with <HeartIcon class="fill-foreground inline size-4 -translate-y-px" /> by Mohith Nagendra
 	</p>
 </footer>
