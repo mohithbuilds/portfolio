@@ -26,7 +26,7 @@
 			<X class="size-10 sm:size-6" />
 			<span class="sr-only">home</span>
 		</a>
-		<PageNavigation {nextProject} {prevProject} />
+		<!-- PageNavigation {nextProject} {prevProject} /-->
 	</div>
 </div>
 
