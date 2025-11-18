@@ -10,8 +10,8 @@ type: 'web'
 keyFeatures: ['Markdown-based CMS', 'SvelteKit Framework', 'Responsive Design', 'Dark Mode Support']
 technologies: ['SvelteKit', 'TypeScript', 'Tailwind CSS', 'Markdown', 'Drizzle ORM']
 images: []
-featured: true
-order: 0
+featured: false
+order: 10
 ---
 
 # Portfolio Website
