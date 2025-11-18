@@ -2,9 +2,9 @@
 title: 'TaskMaster Application'
 slug: 'taskmaster-application'
 description: 'A Java-based to-do list application featuring an intuitive UI, task sorting, regex search, and AWS integration for data storage and authentication.'
-href: 'https://github.com/mohithn04'
+href: 'https://github.com/mohithbuilds'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04'
+gitHubLink: 'https://github.com/mohithbuilds'
 client: 'Personal'
 type: 'web'
 keyFeatures:

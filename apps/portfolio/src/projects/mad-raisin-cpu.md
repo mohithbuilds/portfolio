@@ -2,9 +2,9 @@
 title: 'Mad Raisin CPU'
 slug: 'mad-raisin-cpu'
 description: 'A C project focused on low-level hardware concepts, involving the manipulation of CPU instructions using bitwise operators and the development of a program disassembler.'
-href: 'https://github.com/mohithn04'
+href: 'https://github.com/mohithbuilds'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04'
+gitHubLink: 'https://github.com/mohithbuilds'
 client: 'Personal'
 type: 'web'
 keyFeatures:

@@ -2,9 +2,9 @@
 title: 'Account Ownership Data Analysis'
 slug: 'account-ownership-data-analysis'
 description: 'An analysis of global account ownership data using R, focusing on trends related to gender, education level, and country.'
-href: 'https://github.com/mohithn04'
+href: 'https://github.com/mohithbuilds'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04'
+gitHubLink: 'https://github.com/mohithbuilds'
 client: 'Personal'
 type: 'web'
 keyFeatures:

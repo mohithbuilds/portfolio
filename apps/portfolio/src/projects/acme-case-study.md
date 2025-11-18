@@ -2,9 +2,9 @@
 title: 'ACME Case Study'
 slug: 'acme-case-study'
 description: 'A sales forecasting and optimization platform for Acme, leveraging a synthetic dataset to model hierarchical structures and run multi-scenario analysis for strategic planning.'
-href: 'https://github.com/mohithn04/case-study-ACME.git'
+href: 'https://github.com/mohithbuilds/case-study-ACME.git'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04/case-study-ACME.git'
+gitHubLink: 'https://github.com/mohithbuilds/case-study-ACME.git'
 client: 'Personal'
 type: 'web'
 keyFeatures:

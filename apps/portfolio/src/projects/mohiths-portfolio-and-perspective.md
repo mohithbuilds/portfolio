@@ -4,7 +4,7 @@ slug: 'mohiths-portfolio-and-perspective'
 description: "A personal portfolio and blog website built with Hugo and hosted on Netlify, featuring a responsive design and an integrated blog to share insights on technology."
 href: 'https://mohithn.netlify.app/blogs/'
 linkTitle: 'Demo'
-gitHubLink: 'https://github.com/mohithn04/portfolio.git'
+gitHubLink: 'https://github.com/mohithbuilds/portfolio-old.git'
 client: 'Personal'
 type: 'web'
 keyFeatures:

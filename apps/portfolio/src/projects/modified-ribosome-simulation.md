@@ -2,9 +2,9 @@
 title: 'Modified Ribosome Simulation'
 slug: 'modified-ribosome-simulation'
 description: 'A Python program that simulates a modified ribosome, building amino acid chains from RNA sequences and manipulating the process with five special commands.'
-href: 'https://github.com/mohithn04'
+href: 'https://github.com/mohithbuilds'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04'
+gitHubLink: 'https://github.com/mohithbuilds'
 client: 'Personal'
 type: 'web'
 keyFeatures:
