@@ -2,9 +2,9 @@
 title: 'University Registration System'
 slug: 'university-registration-system'
 description: 'A Java-based application for university course registration, using concurrent programming to support over 1000 students and increase system throughput by 50%.'
-href: 'https://github.com/mohithn04'
+href: 'https://github.com/mohithbuilds'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04'
+gitHubLink: 'https://github.com/mohithbuilds'
 client: 'Personal'
 type: 'web'
 keyFeatures:

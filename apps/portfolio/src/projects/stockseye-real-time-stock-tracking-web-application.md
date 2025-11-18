@@ -2,9 +2,9 @@
 title: 'StocksEye - Real-time Stock Tracker'
 slug: 'stockseye-real-time-stock-tracking-web-application'
 description: 'A web application for tracking stock prices in real-time, built with React.js and featuring live data visualization with Chart.js.'
-href: 'https://github.com/mohithn04'
+href: 'https://github.com/mohithbuilds'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithn04'
+gitHubLink: 'https://github.com/mohithbuilds'
 client: 'Personal'
 type: 'web'
 keyFeatures:
