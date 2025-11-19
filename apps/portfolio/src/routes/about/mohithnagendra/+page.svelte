@@ -1,4 +1,5 @@
 <script lang="ts">
+	import TiltedImage from '$lib/components/TiltedImage.svelte';
 </script>
 
 <svelte:head>
@@ -12,17 +13,22 @@
 <section class="container mx-auto max-w-3xl px-4 py-16">
 	<header class="mb-12">
 		<div class="mb-8 flex flex-col items-center">
-			<div class="ring-border mb-6 h-48 w-48 overflow-hidden rounded-full ring-2">
-				<img
-					src="/images/mohith.jpeg"
-					alt="Mohith Nagendra"
-					class="h-full w-full object-cover"
-					width="192"
-					height="192"
-				/>
+			<div class="h-57 w-57">
+				<TiltedImage borderColor="var(--color-muted-foreground)">
+					<div class="h-full w-full">
+						<img
+							src="/images/mohith.jpeg"
+							alt="Mohith Nagendra"
+							class="h-full w-full object-cover"
+							width="192"
+							height="192"
+						/>
+					</div>
+				</TiltedImage>
 			</div>
 		</div>
-		<h1 class="mb-4 text-center text-4xl font-bold">About Mohith Nagendra</h1>
+		<h1 class="mb-4 text-center text-4xl font-bold">About Me</h1>
+		<p class="text-muted-foreground text-center text-lg font-bold">Mohith Nagendra</p>
 		<p class="text-muted-foreground text-center text-lg">Systems & Backend Engineer</p>
 	</header>
 
