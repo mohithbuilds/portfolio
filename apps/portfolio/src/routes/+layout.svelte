@@ -3,6 +3,7 @@
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	import '@/app.css';
 	import Analytics from '@/components/Analytics.svelte';
+	import Navbar from '@/components/Navbar.svelte';
 	import SEO from '@/components/SEO.svelte';
 	import Socials from '@/components/Socials.svelte';
 	import posthog from 'posthog-js';
@@ -31,6 +32,7 @@
 <div class="relative overflow-hidden">
 	<Border>
 		<main class="no-scrollbar relative flex flex-col p-10 sm:p-16">
+			<Navbar />
 			{@render children()}
 		</main>
 	</Border>

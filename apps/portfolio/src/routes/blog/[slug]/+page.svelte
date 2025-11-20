@@ -40,11 +40,11 @@
 	<meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
-<div class="relative flex flex-col gap-8">
+<div class="relative flex flex-col gap-8 pt-6 sm:pt-12">
 	<article class="prose prose-hr:border-t prose-hr:border-muted-foreground mx-auto max-w-full text-pretty lg:max-w-4xl">
 		<header>
-			<h1 class="text-pretty text-2xl sm:text-4xl">{data.meta.title}</h1>
-			<p>
+			<h1 class="text-pretty text-center text-2xl sm:text-4xl">{data.meta.title}</h1>
+			<p class="text-center">
 				<time datetime={data.meta.publishedAt}>{formatDate(data.meta.publishedAt)}</time>
 				<span>by</span>
 				<a href="/about/mohithnagendra" rel="author">{data.meta.author}</a>

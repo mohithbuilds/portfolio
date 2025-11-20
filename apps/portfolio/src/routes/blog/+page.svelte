@@ -41,20 +41,20 @@
 	<meta name="twitter:image" content="https://mohithn.vercel.app/images/og-mohithn.png" />
 </svelte:head>
 
-<div class="mx-auto max-w-[1200px] px-6 py-12">
-	<header class="mb-16">
+<div class="mx-auto max-w-[1200px] px-6 pb-12 pt-8 sm:pt-12">
+	<header class="mb-8">
 		<h1 class="mb-4 text-4xl font-bold">Blog</h1>
 		<p class="text-muted-foreground max-w-[600px] text-lg">{description}</p>
 	</header>
 
 	<!-- Featured Posts -->
-	<section class="mb-16">
+	<section class="mb-3">
 		<section>
 			<div class="grid gap-4">
 				{#each sortedPosts as post}
 					<Card class="bg-card/50 hover:bg-card border-foreground/20 group relative overflow-hidden transition-colors">
 						<CardHeader class="space-y-4 p-6">
-							<div class="flex items-center justify-between gap-4">
+							<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
 								<CardTitle class="text-xl">
 									<a
 										href={`/blog/${post.slug}`}
