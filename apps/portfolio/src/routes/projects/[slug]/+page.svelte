@@ -12,6 +12,7 @@
 
 	let { data } = $props();
 	let { project, nextProject, prevProject } = $derived(data);
+	let Content = $derived(project.content);
 </script>
 
 <a
@@ -26,22 +27,7 @@
 		{project.title}
 	</h1>
 	<div class="flex flex-row-reverse justify-between gap-2 sm:flex-col">
-<<<<<<< Updated upstream
-		<a
-			href="/"
-			class="flex items-center gap-2 self-end opacity-50 transition-opacity hover:scale-110 hover:opacity-100"
-		>
-			<X class="size-10 sm:size-6" />
-			<span class="sr-only">home</span>
-		</a>
-<<<<<<< Updated upstream
 		<!-- PageNavigation {nextProject} {prevProject} /-->
-=======
-		<PageNavigation {nextProject} {prevProject} />
-=======
-		<!-- PageNavigation {nextProject} {prevProject} /-->
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 	</div>
 </div>
 
@@ -81,7 +67,7 @@
 <section class="prose text-foreground prose-bold:text-foreground! w-full max-w-full text-left leading-loose">
 	{#key project.title}
 		{#if project.content}
-			{project.content}
+			<Content />
 		{:else if project.description}
 			<p>
 				{project.description}

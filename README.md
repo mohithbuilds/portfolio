@@ -98,17 +98,6 @@ This project is built with a modern, full-stack tech stack that is designed to b
 *   Coffee & Nvim
 
 ## TODO
-<<<<<<< Updated upstream
-- Add navigation bar functionality to be able to navigate better. This is complex in the sense that I don't know where it should be in the UI.
-- Change picture in About to where you can move it around similar to the cheggin implementation
-
-=======
-<<<<<<< Updated upstream
-- Add the bar functionality to be able to navigate better. this is complex in the sense that we don't know where it should be in the UI.
-- Add picture where you can move it around similar to the cheggin implementation
-- Add `Home` button at the bottom where `About` and `Blog` are.
-=======
 - Add hooks to go to contact section and make a new projects page.
 - Add technologies as hidden so that it's shown on phone.
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+
