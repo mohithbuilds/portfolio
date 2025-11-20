@@ -33,7 +33,7 @@
 						<a href="/projects" class:active={$page.url.pathname.startsWith('/projects')} on:click={() => (open = false)}>Projects</a>
 					</li>
 					<li>
-						<a href="/contact" class:active={$page.url.pathname === '/contact'} on:click={() => (open = false)}>Contact</a>
+						<a href="/#contact" class:active={$page.url.pathname === '/contact'} on:click={() => (open = false)}>Contact</a>
 					</li>
 				</ul>
 			</SheetContent>
@@ -53,7 +53,7 @@
 			<a href="/projects" class:active={$page.url.pathname.startsWith('/projects')}>Projects</a>
 		</li>
 		<li>
-			<a href="/contact" class:active={$page.url.pathname === '/contact'}>Contact</a>
+			<a href="/#contact" class:active={$page.url.pathname === '/contact'}>Contact</a>
 		</li>
 	</ul>
 </nav>
