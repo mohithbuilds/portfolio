@@ -14,11 +14,19 @@
 	let { project, nextProject, prevProject } = $derived(data);
 </script>
 
-<div class="flex w-full flex-col-reverse justify-between pb-8 sm:flex-row">
-	<h1 class="text-pretty break-words text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+<a
+	href="/"
+	class="absolute right-10 top-10 z-10 flex items-center gap-2 opacity-50 transition-opacity hover:scale-110 hover:opacity-100 sm:right-16 sm:top-16 md:hidden"
+>
+	<X class="size-6" />
+	<span class="sr-only">home</span>
+</a>
+<div class="pt-2 flex w-full flex-col-reverse justify-between pb-8 sm:flex-row sm:pt-4">
+	<h1 class="w-full text-pretty text-center break-words text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
 		{project.title}
 	</h1>
 	<div class="flex flex-row-reverse justify-between gap-2 sm:flex-col">
+<<<<<<< Updated upstream
 		<a
 			href="/"
 			class="flex items-center gap-2 self-end opacity-50 transition-opacity hover:scale-110 hover:opacity-100"
@@ -26,7 +34,14 @@
 			<X class="size-10 sm:size-6" />
 			<span class="sr-only">home</span>
 		</a>
+<<<<<<< Updated upstream
 		<!-- PageNavigation {nextProject} {prevProject} /-->
+=======
+		<PageNavigation {nextProject} {prevProject} />
+=======
+		<!-- PageNavigation {nextProject} {prevProject} /-->
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 	</div>
 </div>
 
