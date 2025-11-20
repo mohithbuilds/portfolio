@@ -21,7 +21,9 @@
 		"postbuild": "npx svelte-sitemap --out-dir .vercel/output/static --domain https://mohithn.vercel.app"
 	},
 	"devDependencies": {
+		"@internationalized/date": "^3.10.0",
 		"@k/eslint-config": "workspace:*",
+		"@lucide/svelte": "^0.544.0",
 		"@pixi/devtools": "^2.0.1",
 		"@playwright/test": "^1.52.0",
 		"@sveltejs/adapter-vercel": "^5.7.2",
@@ -30,7 +32,7 @@
 		"@tailwindcss/postcss": "^4.1.14",
 		"@tailwindcss/typography": "^0.5.16",
 		"@tailwindcss/vite": "^4.1.16",
-		"bits-ui": "1.4.8",
+		"bits-ui": "2.14.4",
 		"drizzle-kit": "^0.31.1",
 		"mdsvex": "^0.12.6",
 		"postcss": "^8.5.3",
@@ -41,10 +43,11 @@
 		"rehype-unwrap-images": "^1.0.0",
 		"remark-toc": "^9.0.0",
 		"shiki": "^3.4.2",
-		"svelte": "5.30.2",
+		"svelte": "5.43.12",
 		"svelte-check": "^4.2.1",
 		"svelte-sitemap": "^2.7.0",
 		"sveltekit-superforms": "^2.25.0",
+		"tailwind-variants": "^3.1.1",
 		"tailwindcss": "^4.1.7",
 		"tw-animate-css": "^1.3.0",
 		"typescript": "^5.8.3",
@@ -55,7 +58,6 @@
 	"dependencies": {
 		"@aws-sdk/client-s3": "^3.812.0",
 		"@libsql/client": "^0.15.6",
-		"@lucide/svelte": "^0.511.0",
 		"@msgpack/msgpack": "^3.1.1",
 		"@number-flow/svelte": "^0.3.7",
 		"@oslojs/crypto": "^1.0.1",
@@ -65,6 +67,7 @@
 		"drizzle-orm": "^0.43.1",
 		"fast-blurhash": "^1.1.4",
 		"gsap": "^3.13.0",
+		"lucide-svelte": "^0.554.0",
 		"motion": "^12.12.1",
 		"nanoid": "^5.1.5",
 		"node-mailjet": "^6.0.9",
@@ -72,7 +75,6 @@
 		"posthog-js": "^1.242.2",
 		"simple-icons": "^14.13.0",
 		"svelte-sonner": "^1.0.5",
-		"tailwind-merge": "^3.3.0",
-		"tailwind-variants": "^1.0.0"
+		"tailwind-merge": "^3.3.0"
 	}
 }
