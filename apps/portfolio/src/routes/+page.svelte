@@ -40,8 +40,8 @@
 			<h2 class="pb-4 text-3xl font-bold">Experiments</h2>
 			<List items={experiments} />
 		</section>
-		<Divider id="contact" />
-		<section>
+		<Divider />
+		<section id="contact">
 			<h2 class="pb-4 text-3xl font-bold">Contact</h2>
 			<ContactForm {contactForm} />
 		</section>
