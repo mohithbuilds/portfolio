@@ -7,8 +7,9 @@
 		class?: string;
 		duration?: number;
 		delay?: number;
+		id?: string;
 	};
-	const { class: className, duration = 2000, delay = 0 }: Props = $props();
+	const { class: className, duration = 2000, delay = 0, id }: Props = $props();
 
 	let mounted = $state(false);
 
@@ -17,7 +18,7 @@
 	});
 </script>
 
-<div class={cn('my-8 h-1 sm:my-12', className)}>
+<div id={id} class={cn('my-8 h-1 sm:my-12', className)}>
 	{#if mounted}
 		<svg class="stroke-muted-foreground text-muted-foreground opactity-50 h-1 w-full">
 			<line
