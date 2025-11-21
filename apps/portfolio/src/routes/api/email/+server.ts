@@ -1,41 +1,25 @@
 import { error, json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { PRIVATE_MAILJET_API_KEY, PRIVATE_MAILJET_SECRET_KEY } from '$env/static/private';
-import Mailjet from 'node-mailjet';
 import { contactSchema } from '$lib/schema/contactSchema';
-
-const mailjet = new Mailjet({
-    apiKey: PRIVATE_MAILJET_API_KEY,
-    apiSecret: PRIVATE_MAILJET_SECRET_KEY
-});
+import { sendEmail } from '$lib/server/email';
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
 		const body = await request.json();
-		const { name, email, subject, message } = contactSchema.parse(body);
+		const parseResult = contactSchema.safeParse(body);
 
-		const mailjetRequest = mailjet.post('send', { version: 'v3.1' }).request({
-			Messages: [
-				{
-					From: {
-						Email: 'hi.mohithn@gmail.com',
-						Name: 'Mohith Nagendra',
-					},
-					To: [
-						{
-							Email: 'mohith.n2022@gmail.com',
-							Name: 'Mohith Nagendra',
-						},
-					],
-					Subject: subject,
-					TextPart: message,
-					HTMLPart: `<p>new message from ${name}, email: ${email}</p> <p>${message}</p>`,
-				},
-			],
-		});
+		if (!parseResult.success) {
+			return error(400, 'Invalid request body');
+		}
 
-		await mailjetRequest;
-		return json({ success: true });
+		const result = await sendEmail(parseResult.data);
+
+		if (result.success) {
+			return json({ success: true });
+		} else {
+			return error(500, result.error || 'An error occurred');
+		}
+
 	} catch (e) {
 		console.log(e);
 		if (e instanceof Error) {
