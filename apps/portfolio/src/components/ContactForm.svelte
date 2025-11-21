@@ -9,13 +9,13 @@
 
 	let { contactForm }: { contactForm: SuperValidated<Infer<ContactForm>> } = $props();
 
-	const form = superForm(contactForm, {
+	const { form: formData, enhance, errors, submitting, reset } = superForm(contactForm, {
 		onResult: ({ result }) => {
 			if (result.status === 200) {
 				toast.custom(CustomToast, {
 					componentProps: {
-						title: 'Success',
-						message: `Roger that, I'll get back to you soon!`,
+						title: 'Email Sent!',
+						message: `I'll get back to you soon!`,
 					},
 				});
 			} else if (result.status === 500) {
@@ -28,12 +28,15 @@
 				});
 			}
 		},
+		onUpdated: ({ form }) => {
+			if (form.message) {
+				reset();
+			}
+		}
 	});
-
-	let { form: formData, enhance, errors } = form;
 </script>
 
-<form id="contact" method="POST" use:enhance class="flex max-w-lg flex-col gap-4" action="/contact?/submitContactForm">
+<form id="contact" method="POST" use:enhance class="flex max-w-lg flex-col gap-4" action="?/submitContactForm">
 	<Input
 		label="Name"
 		name="name"
@@ -81,7 +84,9 @@
 
 	<button
 		type="submit"
-		class="bg-background border-muted-foreground focus:border-accent-foreground focus:outline-accent-foreground border p-4 focus:outline-hidden"
-		>Send</button
+		class="bg-background border-muted-foreground focus:border-accent-foreground focus:outline-accent-foreground border p-4 focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
+		disabled={$submitting}
 	>
+		{$submitting ? 'Sending...' : 'Send'}
+	</button>
 </form>
