@@ -8,6 +8,16 @@
 	import { Menu } from 'lucide-svelte';
 	let open = false;
 
+	function scrollTo(event: MouseEvent, id: string) {
+		event.preventDefault();
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' });
+			history.pushState(null, '', `#${id}`);
+		}
+		open = false;
+	}
+
     $: navClasses = `flex justify-start md:justify-center md:pb-0`;
 </script>
 
@@ -33,7 +43,11 @@
 						<a href="/projects" class:active={$page.url.pathname.startsWith('/projects')} on:click={() => (open = false)}>Projects</a>
 					</li>
 					<li>
-						<a href="/#contact" class:active={$page.url.hash === '#contact'} on:click={() => (open = false)}>Contact</a>
+						<a
+							href="/#contact"
+							class:active={$page.url.hash === '#contact'}
+							on:click={(e) => scrollTo(e, 'contact')}>Contact</a
+						>
 					</li>
 				</ul>
 			</SheetContent>
@@ -53,7 +67,11 @@
 			<a href="/projects" class:active={$page.url.pathname.startsWith('/projects')}>Projects</a>
 		</li>
 		<li>
-			<a href="/#contact" class:active={$page.url.hash === '#contact'}>Contact</a>
+			<a
+				href="/#contact"
+				class:active={$page.url.hash === '#contact'}
+				on:click={(e) => scrollTo(e, 'contact')}>Contact</a
+			>
 		</li>
 	</ul>
 </nav>
