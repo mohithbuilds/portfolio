@@ -8,7 +8,7 @@
 	import { Menu } from 'lucide-svelte';
 	let open = false;
 
-    $: navClasses = `flex justify-start md:justify-center ${$page.url.pathname === '/' ? 'pb-8' : 'pb-0'} md:pb-0`;
+    $: navClasses = `flex justify-start md:justify-center md:pb-0`;
 </script>
 
 <nav class="{navClasses}">
