@@ -1,14 +1,17 @@
 <script lang="ts">
 	import { cn } from '@/lib/utils';
 	import {
+		siApachekafka,
 		siCplusplus,
 		siDocker,
 		siGit,
 		siGo,
+		siGraphql,
 		siIterm2,
 		siOpenjdk,
 		siKotlin,
-		siNextdotjs,
+		// siNextdotjs,
+		siNodedotjs,
 		siNvidia,
 		siPostgresql,
 		siPython,
@@ -33,6 +36,11 @@
 
 	const technologies: Technology[] = [
 		{
+			name: 'Java',
+			url: 'https://openjdk.org/',
+			icon: siOpenjdk,
+		},
+		{
 			name: 'Python',
 			url: 'https://www.python.org/',
 			icon: siPython,
@@ -46,11 +54,6 @@
 			name: 'Go',
 			url: 'https://go.dev/',
 			icon: siGo,
-		},
-		{
-			name: 'Java',
-			url: 'https://openjdk.org/',
-			icon: siOpenjdk,
 		},
 		{
 			name: 'Kotlin',
@@ -73,20 +76,35 @@
 			icon: siSwift,
 		},
 		{
+			name: 'PyTorch',
+			url: 'https://pytorch.org/',
+			icon: siPytorch,
+		},
+		{
+			name: 'CUDA',
+			url: 'https://developer.nvidia.com/cuda-toolkit',
+			icon: siNvidia,
+		},
+		{
+			name: 'Node.js',
+			url: 'https://nodejs.org/',
+			icon: siNodedotjs,
+		},
+		{
 			name: 'React',
 			url: 'https://react.dev',
 			icon: siReact,
 		},
 		{
-			name: 'Next.js',
-			url: 'https://nextjs.org',
-			icon: siNextdotjs,
+			name: 'GraphQL',
+			url: '',
+			icon: siGraphql,
 		},
-		{
-			name: 'PostgreSQL',
-			url: 'https://postgresql.org',
-			icon: siPostgresql,
-		},
+		// {
+		// 	name: 'Next.js',
+		// 	url: 'https://nextjs.org',
+		// 	icon: siNextdotjs,
+		// },
 		{
 			name: 'Docker',
 			url: 'https://docker.com',
@@ -98,24 +116,20 @@
 			icon: siTerraform,
 		},
 		{
-			name: 'PyTorch',
-			url: 'https://pytorch.org/',
-			icon: siPytorch,
+			name: 'PostgreSQL',
+			url: 'https://postgresql.org',
+			icon: siPostgresql,
 		},
 		{
-			name: 'CUDA',
-			url: 'https://developer.nvidia.com/cuda-toolkit',
-			icon: siNvidia,
+			name: 'Kafka',
+			url: 'https://kafka.apache.org/',
+			icon: siApachekafka,
+			filler: true,
 		},
 		{
 			name: 'Git',
-			url: '',
+			url: 'https://git-scm.com/',
 			icon: siGit,
-		},
-		{
-			name: 'Shell Scripting',
-			url: '',
-			icon: siIterm2,
 			filler: true,
 		},
 	];
