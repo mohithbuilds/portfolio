@@ -27,6 +27,9 @@
 						>
 					</li>
 					<li>
+						<a href="/experience" class:active={$page.url.pathname.startsWith('/experience')} on:click={() => (open = false)}>Experience</a>
+					</li>
+					<li>
 						<a href="/blog" class:active={$page.url.pathname.startsWith('/blog')} on:click={() => (open = false)}>Blog</a>
 					</li>
 					<li>
@@ -39,25 +42,30 @@
 			</SheetContent>
 		</Sheet>
 	</div>
-	<ul class="hidden items-center space-x-4 md:flex">
-		<li><a href="/" class:active={$page.url.pathname === '/'}>Home</a></li>
-		<li>
-			<a href="/about/mohithnagendra" class:active={$page.url.pathname === '/about/mohithnagendra'}
-				>About</a
-			>
-		</li>
-		<li>
-			<a href="/blog" class:active={$page.url.pathname.startsWith('/blog')}>Blog</a>
-		</li>
-		<li>
-			<a href="/projects" class:active={$page.url.pathname.startsWith('/projects')}>Projects</a>
-		</li>
-		<li>
-			<a href="/contact" class:active={$page.url.pathname === '/contact'}>Contact</a>
-		</li>
-	</ul>
+	<div class="hidden md:inline-flex flex-col">
+		<ul class="flex items-center space-x-4">
+			<li><a href="/" class:active={$page.url.pathname === '/'}>Home</a></li>
+			<li>
+				<a href="/about/mohithnagendra" class:active={$page.url.pathname === '/about/mohithnagendra'}
+					>About</a
+				>
+			</li>
+			<li>
+				<a href="/experience" class:active={$page.url.pathname.startsWith('/experience')}>Experience</a>
+			</li>
+			<li>
+				<a href="/blog" class:active={$page.url.pathname.startsWith('/blog')}>Blog</a>
+			</li>
+			<li>
+				<a href="/projects" class:active={$page.url.pathname.startsWith('/projects')}>Projects</a>
+			</li>
+			<li>
+				<a href="/contact" class:active={$page.url.pathname === '/contact'}>Contact</a>
+			</li>
+		</ul>
+		<div class="h-0.5 bg-muted-foreground mt-2 w-full"></div>
+	</div>
 </nav>
-<div class="h-px bg-muted-foreground mt-2 mx-auto w-80 hidden md:block"></div>
 
 <style>
 	.active {

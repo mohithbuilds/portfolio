@@ -1,12 +1,13 @@
 <script lang="ts">
 	import ContactForm from '@/components/ContactForm.svelte';
 	import Divider from '@/components/Divider.svelte';
+	import ExperienceSummary from '@/components/ExperienceSummary.svelte';
 	import List from '@/components/List.svelte';
 	import Technologies from '@/components/Technologies.svelte';
 	import type { PageProps } from './$types';
 	import Blob from './Blob.svelte';
-	import HeroSection from './HeroSection.svelte';
 	import GradientBlurDots from './GradientBlurDots.svelte';
+	import HeroSection from './HeroSection.svelte';
 
 	let { data }: PageProps = $props();
 	let contactForm = $derived(data.contactForm);
@@ -26,6 +27,11 @@
 	<GradientBlurDots />
 	<div class="mx-auto max-w-7xl">
 		<Divider class="mt-0!" delay={data.firstVisit ? 3600 : 0} />
+		<div>
+			<h2 class="pb-4 text-3xl font-bold">Experience</h2>
+			<ExperienceSummary />
+		</div>
+		<Divider />
 		<div>
 			<h2 class="pb-4 text-3xl font-bold">Technologies</h2>
 			<Technologies />
