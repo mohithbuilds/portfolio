@@ -28,7 +28,7 @@
 		"@playwright/test": "^1.52.0",
 		"@sveltejs/adapter-vercel": "^5.7.2",
 		"@sveltejs/kit": "^2.21.0",
-		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/postcss": "^4.1.14",
 		"@tailwindcss/typography": "^0.5.16",
 		"@tailwindcss/vite": "^4.1.16",
@@ -57,7 +57,7 @@
 		"zod": "^3.24.4"
 	},
 	"dependencies": {
-		"@libsql/client": "^0.15.6",
+		"@libsql/client": "^0.15.15",
 		"@msgpack/msgpack": "^3.1.1",
 		"@number-flow/svelte": "^0.3.7",
 		"@oslojs/crypto": "^1.0.1",
@@ -68,9 +68,9 @@
 		"gsap": "^3.13.0",
 		"lucide-svelte": "^0.554.0",
 		"motion": "^12.12.1",
-		"node-mailjet": "^6.0.9",
+		"node-mailjet": "^6.0.11",
 		"pixi.js": "^8.9.2",
-		"posthog-js": "^1.242.2",
+		"posthog-js": "^1.297.2",
 		"simple-icons": "^14.13.0",
 		"svelte-sonner": "^1.0.5",
 		"tailwind-merge": "^3.3.0"
