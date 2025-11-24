@@ -12,6 +12,8 @@ seoDescription: "Highlights from OpenAI's First Developer Conference"
 seoKeywords: ['OpenAI', 'ChatGPT', 'Microsoft']
 ---
 
+![OpenAI Logo](/images/blogs/openai.jpg)
+
 # Highlights from OpenAI's First Developer Conference
 
 OpenAI, a leading artificial intelligence research lab, recently hosted its first developer conference, DevDay 2023¹⁴. The event was packed with exciting announcements and introductions of new technologies. Here are some of the key highlights:
@@ -36,7 +38,7 @@ OpenAI, a leading artificial intelligence research lab, recently hosted its firs
 
 > The company also launched a new text-to-speech API called Audio API with six preset voices: Alloy, Echo, Fable, Onyx, Nova and Shimer⁴.
 
-![Conference](/images/openaiconference.jpg)
+![Conference](/images/blogs/openaiconference.jpg)
 
 **Microsoft CEO Satya Nadella & CEO of OpenAI Sam Altman**
 ## Microsoft Partnership
