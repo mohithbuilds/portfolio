@@ -31,7 +31,7 @@ AR is still in its early stages, but the potential is undeniable. It's more than
 
 Even fashion is getting in on the AR act! Big names like Meta are collaborating with established brands like Ray-Ban to create AR glasses that are both stylish and functional. Meta's Ray-Ban Stories integrate AI into the frames, allowing you to take photos and videos with a simple voice command or tap on the temple. Imagine capturing those perfect vacation moments without ever pulling out your phone, or discreetly recording a lecture for later review. 
 
-This is just the tip of the iceberg for AR glasses with built-in intelligence. Imagine these glasses becoming even more sophisticated, offering real--time translations as you travel the world, or identifying landmarks and providing historical information with a simple glance. The possibilities are truly endless.
+This is just the tip of the iceberg for AR glasses with built-in intelligence. Imagine these glasses becoming even more sophisticated, offering real-time translations as you travel the world, or identifying landmarks and providing historical information with a simple glance. The possibilities are truly endless.
 
 With companies like Nimo and Meta leading the charge, the future of AR is looking incredibly bright.  
 
