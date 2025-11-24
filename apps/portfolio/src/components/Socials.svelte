@@ -14,7 +14,7 @@
 	<meta property="og:image" content="https://mohithn.vercel.app/images/og-mohith-nagendra.jpg" />
 	<meta
 		property="og:description"
-		content="Portfolio of Mohith Nagendra, a full-stack developer specializing in NextJS and SvelteKit."
+		content="Portfolio of Mohith Nagendra, a software engineer specializing in large-scale systems and Artificial Intelligence."
 	/>
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
@@ -24,7 +24,7 @@
 	<meta name="twitter:title" content="Mohith Nagendra - Full-stack developer" />
 	<meta
 		name="twitter:description"
-		content="Portfolio of Mohith Nagendra, a full-stack developer specializing in NextJS and SvelteKit."
+		content="Portfolio of Mohith Nagendra, a software engineer specializing in large-scale systems and Artificial Intelligence."
 	/>
 	<meta name="twitter:image" content="https://mohithn.vercel.app/images/og-mohith-nagendra.jpg" />
 {/if}
