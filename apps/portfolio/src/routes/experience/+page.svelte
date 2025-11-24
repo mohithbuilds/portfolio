@@ -17,7 +17,8 @@
 				<ul class="list-disc pl-5 mt-2 space-y-1">
 					<li>Developed an AI-driven solution for rapid audience and media reception analysis, eliminating the high cost and delays of traditional focus groups</li>
 					<li>Developed client insights agent surfacing client-specific analytics, reducing reporting time by 60% across 50+ analysts</li>
-					<li>Identified key limitations in analyst workflows and engineered AI-driven solutions to directly address them</li>
+					<li>Identified key limitations in analyst workflows and engineered AI-driven solutions to address them</li>
+				</ul>
 			`
 		},
 		{
@@ -29,6 +30,7 @@
 					<li>Developed and maintained core backend components for a large-scale rewards platform, consistently applying modern design patterns and best practices</li>
 					<li>Translated direct customer feedback into actionable engineering requirements, developing new features and refining core business logic with a strong focus on the end-user experience</li>
 					<li>Contributed to the development of microservices in TypeScript and Go, implementing optimizations that reduced service latency and improved system reliability</li>
+				</ul>
 			`
 		},
 		{
@@ -41,6 +43,7 @@
 					<li>Designed and deployed OCI Environment & Autonomous Database for ML model training data management</li>
 					<li>Performed exploratory data analysis (EDA) and feature engineering on ADS-B data, training an ML model to predict flight ETAs</li>
 					<li>Implemented an LLM to streamline ticket resolution processes for both internal operations and client-facing applications</li>
+				</ul>
 			`
 		},
 
@@ -53,6 +56,7 @@
 					<li>Created Total Rewards Reminder email campaign reaching 6.5M+ users and increasing platform engagement by 22%</li>
 					<li>Crafted responsive email templates achieving 99.8% delivery rate through cross-platform compatibility testing</li>
 					<li>Constructed Datadog monitoring dashboards for tracking email metrics and enabling proactive issue resolution</li>
+				</ul>
 			`
 		},
 		{
@@ -64,6 +68,7 @@
 					<li>Built React Native ticketing app that eliminated service fees, reducing prices by 27% and increasing adoption by 40%</li>
 					<li>Designed intuitive UI/UX and implemented secure payment processing API handling $50K+ in monthly transactions</li>
 					<li>Automated event alerts through Firebase Cloud Messaging, boosting attendance rates by 18%</li>
+				</ul>
 			`
 		},
 		{
@@ -75,6 +80,7 @@
 					<li>Engineered AI-based Traffic Analysis pipeline with OpenCV and PyTorch, processing 100+ hours of footage</li>
 					<li>Formulated a visibility ranking model to optimize ad placement, enhancing workflow efficiency by 90%</li>
 					<li>Presented technical findings to CEO and partners, translating complex ML concepts into actionable business insights</li>
+				</ul>
 			`
 		},
 		{
@@ -87,6 +93,7 @@
 					<li>Integrated Flask backend handling 500+ requests per minute while maintaining sub-200ms response times</li>
 					<li>Designed interactive frontend using React and Tailwind CSS, resulting in 95% positive user feedback on UI/UX</li>
 					<li>Collaborated with Microsoft engineer mentor to establish best practices in code architecture and documentation</li>
+				</ul>
 			`
 		},
 		{
@@ -98,6 +105,7 @@
 					<li>Deployed a client management system using Spring Boot and React, improving client interactions efficiency by 30%</li>
 					<li>Authored documentation and training materials for new system, enabling 100% adoption rate across 25+ team members</li>
 					<li>Earned certification after completing 30 hours of training in Desktop, Networks, Servers, and Cloud Service Technologies</li>
+				</ul>
 			`
 		},
 		{
@@ -108,6 +116,7 @@
 				<ul class="list-disc pl-5 mt-2 space-y-1">
 					<li>Led research team analyzing DNA configurations using Python and R, improving analysis performance/accuracy by 25%</li>
 					<li>Optimized genomic data processing workflows leveraging C++ and parallel computing, reducing execution time by 65%</li>
+				</ul>
 			`
 		},
 		{
@@ -120,9 +129,9 @@
 					<li>Led a team to successfully advance through regional qualifiers to the state-level championship</li>
 					<li>Provided comprehensive mentorship across all competition categories, including robot design, programming, project management, and presentation skills</li>
 					<li>Fostered critical skills in leadership and collaborative problem-solving, championing the FIRST Core Values of innovation, inclusion, and Gracious Professionalism®</li>
+				</ul>
 			`
 		}
-
 	];
 
 	const educations = [
