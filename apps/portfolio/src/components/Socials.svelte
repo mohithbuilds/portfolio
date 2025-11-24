@@ -11,7 +11,7 @@
 	<meta property="og:url" content="https://mohithn.vercel.app" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Mohith Nagendra - Full-stack developer" />
-	<meta property="og:image" content="https://mohithn.vercel.app/images/og-mohith-nagendra.jpg" />
+	<meta property="og:image" content="https://mohithn.vercel.app/images/og-mohithn.png" />
 	<meta
 		property="og:description"
 		content="Portfolio of Mohith Nagendra, a software engineer specializing in large-scale systems and Artificial Intelligence."
@@ -26,5 +26,5 @@
 		name="twitter:description"
 		content="Portfolio of Mohith Nagendra, a software engineer specializing in large-scale systems and Artificial Intelligence."
 	/>
-	<meta name="twitter:image" content="https://mohithn.vercel.app/images/og-mohith-nagendra.jpg" />
+	<meta name="twitter:image" content="https://mohithn.vercel.app/images/og-mohithn.png" />
 {/if}

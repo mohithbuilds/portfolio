@@ -53,7 +53,7 @@ export type Project = {
   }[];
   featured: boolean;
   order: number;
-  content: ComponentType;
+  content: ComponentType | null;
 };
 
 export async function getProject(slug: string): Promise<Project | null> {
@@ -88,17 +88,20 @@ export async function getProject(slug: string): Promise<Project | null> {
 
 export async function getAllProjects(): Promise<Project[]> {
   try {
-    const projects = await import.meta.glob('../projects/*.md', { eager: true });
-    const validProjects = Object.entries(projects)
-      .map(([path, project]) => {
-        const parsed = projectSchema.safeParse(project);
+    const projectModules = import.meta.glob('../projects/*.md');
+    const projects = await Promise.all(
+      Object.entries(projectModules).map(async ([path, resolver]) => {
+        const { metadata } = await resolver();
+        const parsed = projectSchema.safeParse({ metadata }); // Only validate metadata here
         if (!parsed.success) {
           console.error(`Project validation failed for ${path}:`, parsed.error);
           return null;
         }
         return parsed.data;
       })
-      .filter((project): project is NonNullable<typeof project> => project !== null);
+    );
+
+    const validProjects = projects.filter((project): project is NonNullable<typeof project> => project !== null);
 
     // Transform and sort projects
     const transformedProjects: Project[] = validProjects.map(project => ({
@@ -113,7 +116,7 @@ export async function getAllProjects(): Promise<Project[]> {
       keyFeatures: project.metadata.keyFeatures,
       featured: project.metadata.featured,
       order: project.metadata.order,
-      content: project.default,
+      content: null as any, // Content is not available here, it will be fetched by getProject
       technologies: project.metadata.technologies.map(tech => ({ title: tech })),
       images: project.metadata.images.map(img => ({
         asset: {

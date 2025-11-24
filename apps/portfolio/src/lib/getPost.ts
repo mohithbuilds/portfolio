@@ -16,7 +16,7 @@ const postSchema = z.object({
 		seoKeywords: z.array(z.string()).default([]),
 		ogImage: z.string().optional(),
 	}),
-	default: z.any(),
+	default: z.any().optional(),
 });
 
 export async function getPost(slug: string) {
@@ -40,8 +40,17 @@ export async function getPost(slug: string) {
 }
 
 export async function getAllPosts() {
-	const posts = await import.meta.glob('../posts/*.md', { eager: true });
-	const postSchemas = Object.values(posts).map((post) => postSchema.safeParse(post));
+	const postModules = import.meta.glob('../posts/*.md');
+	const posts = await Promise.all(
+		Object.values(postModules).map(async (resolver) => {
+			const { metadata } = await resolver();
+			const parsed = postSchema.safeParse({ metadata }); // Only validate metadata here
+			if (!parsed.success) {
+				return null;
+			}
+			return parsed.data;
+		})
+	);
 
-	return postSchemas.filter((post) => post.success).map((post) => post.data);
+	return posts.filter((post) => post !== null);
 }
