@@ -12,6 +12,8 @@ seoDescription: "DALL-E is a groundbreaking AI system that can generate original
 seoKeywords: ['AI', 'Dall E', 'Art']
 ---
 
+![Dall-E 2](/images/blogs/dalle2.jpg)
+
 DALL-E is a groundbreaking AI system that can generate original, realistic images and art from a short text description⁴. It's like having an artist at your fingertips, ready to bring your wildest ideas to life⁵.
 
 ## How Does DALL-E Work?

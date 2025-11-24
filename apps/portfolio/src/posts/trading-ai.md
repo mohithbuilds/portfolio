@@ -12,6 +12,8 @@ seoDescription: "A Computer Science student's thoughts on the future of trading,
 seoKeywords: ['ChatGPT', 'AI', 'Stocks', 'Trading']
 ---
 
+![Future of Trading](/images/blogs/trade.webp)
+
 Hello, I’m a Computer Science student at the University of Maryland, specializing in Machine Learning. I’m also an Innovation & Software Development Intern at Airweb Digital, where I’m developing an AI-based Attention Analysis feature. Today, I’d like to share my thoughts on the future of trading, particularly the role of Artificial Intelligence (AI).
 
 ## The Current Landscape
