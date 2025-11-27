@@ -6,7 +6,7 @@
 	import { ExternalLinkIcon, GithubIcon, X } from '@lucide/svelte';
 
 	import Divider from '@/components/Divider.svelte';
-	import ProjectTypeChip from '@/components/ProjectTypeChip.svelte';
+
 	import { scrollToTop } from '@/lib/utils';
 	import AnimatedCounter from '@/routes/AnimatedCounter.svelte';
 
@@ -35,9 +35,7 @@
 	<div>
 		<h2 class="text-md pb-2">Meta:</h2>
 		<div class="flex flex-wrap gap-2">
-			{#if project.type}
-				<ProjectTypeChip type={project.type} />
-			{/if}
+
 			{#if project.gitHubLink}
 				<LinkButton href={project.gitHubLink}>
 					<GithubIcon class="size-4 sm:size-6" />
