@@ -4,7 +4,7 @@ slug: '2024-crime-in-los-angeles-analysis'
 description: 'An analysis of 2024 Los Angeles crime data to uncover trends, predict victim demographics using machine learning, and identify high-risk areas to inform safety strategies.'
 href: 'https://mohithbuilds.github.io/'
 linkTitle: 'View on GitHub'
-gitHubLink: 'https://github.com/mohithbuilds/mohithbuilds.github.io.git'
+gitHubLink: 'https://github.com/mohithbuilds/mohithbuilds.github.io'
 client: 'Personal'
 type: 'web'
 keyFeatures:
