@@ -13,12 +13,12 @@
 	let contactForm = $derived(data.contactForm);
 	let projects = $derived(data.page.projects);
 
-	const experiments = [
-		{
-			title: 'Particles',
-			slug: '/experiments/particles',
-		},
-	];
+	// const experiments = [
+		// {
+			// title: 'Particles',
+			// slug: '/experiment/particles',
+		// },
+	// ];
 </script>
 
 <Blob />
@@ -42,11 +42,11 @@
 			<List items={projects.map((project) => ({ ...project, slug: `/projects/${project.slug}` }))} />
 		</div>
 		<Divider />
-		<section>
-			<h2 class="pb-4 text-3xl font-bold">Experiments</h2>
-			<List items={experiments} />
-		</section>
-		<Divider />
+		<!-- <section> -->
+		<!-- 	<h2 class="pb-4 text-3xl font-bold">Experiments</h2> -->
+		<!-- 	<List items={experiments} /> -->
+		<!-- </section> -->
+		<!-- <Divider /> -->
 		<section id="contact">
 			<h2 class="pb-4 text-3xl font-bold">Contact</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
