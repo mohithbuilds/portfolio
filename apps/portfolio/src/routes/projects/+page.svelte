@@ -5,7 +5,7 @@
 	let { data } = $props();
 
 	const pageTitle = 'Projects | Mohith Nagendra';
-	const description = 'A collection of projects by Mohith Nagendra, showcasing skills in web development, software engineering, and more.';
+	const description = 'A collection of projects by Mohith Nagendra, showcasing skills in software engineering, data analysis, systems, AI, ML, and more.';
 	const canonicalUrl = 'https://mohithn.vercel.app/projects';
 </script>
 
