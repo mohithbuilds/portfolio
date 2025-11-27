@@ -6,6 +6,7 @@
 	import LinkedInAnimated from '@/components/icons/LinkedInIconAnimated.svelte';
 	import { MapPin } from '@lucide/svelte';
 	import posthog from 'posthog-js';
+	import LinkButton from '@/components/LinkButton.svelte';
 
 	let { initialLikes }: { initialLikes: number } = $props();
 </script>
@@ -43,7 +44,7 @@
 			<div class="flex flex-col gap-3">
 				<AnimatedCounter {initialLikes} slug="/" />
 
-				<div class="flex items-center gap-3">
+				<div class="w-[9rem] flex justify-between">
 					<a
 						href="https://github.com/mohithbuilds"
 						target="_blank"
@@ -72,6 +73,8 @@
 						<BskyAnimated size={2.3} />
 					</a>
 				</div>
+
+				<LinkButton class="mt-2 w-[9rem]" href="/Mohith_Engineering_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</LinkButton>
 			</div>
 		</div>
 	</div>
