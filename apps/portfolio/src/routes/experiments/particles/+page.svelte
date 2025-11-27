@@ -131,7 +131,7 @@
   			<span class="sr-only">home</span>
   		</a>
   		<div class="flex w-full max-w-(--breakpoint-md) flex-col gap-4">
-  			<!-- svelte-ignore element_invalid_self_closing_tag -->
+  			<!-- svelte-ignore element_invalid_self_closing_tag --
   			<canvas bind:this={canvas} class="min-h-[431px fadeIn h-auto w-full" />
   			<ParticleControls {settings} bind:showControls onUpdate={updateParticleSystem} />
   		</div>
@@ -151,4 +151,3 @@
   	}
   </style>
 -->
-
