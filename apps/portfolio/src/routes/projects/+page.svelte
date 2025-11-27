@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Card, CardDescription, CardHeader, CardTitle } from '$lib/components/ui/card';
-	import ProjectTypeChip from '@/components/ProjectTypeChip.svelte';
+
 
 	let { data } = $props();
 
@@ -40,9 +40,7 @@
 									{project.title}
 								</a>
 							</CardTitle>
-							{#if project.type}
-								<ProjectTypeChip type={project.type} />
-							{/if}
+
 						</div>
 						{#if project.description}
 							<CardDescription class="line-clamp-2">{project.description}</CardDescription>
