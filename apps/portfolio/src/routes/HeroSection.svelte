@@ -21,8 +21,8 @@
 				>
 					Hi, I'm Mohith!
 				</h1>
-				<span class="flex items-center gap-1 text-pretty text-sm font-normal mt-2">
-					<MapPin size={12} />
+				<span class="flex items-center gap-1 text-pretty text-md font-normal mt-2">
+					<MapPin size={14} />
 					Seattle
 				</span>
 			</div>

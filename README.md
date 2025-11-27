@@ -98,6 +98,5 @@ This project is built with a modern, full-stack tech stack that is designed to b
 *   Coffee & Nvim
 
 ## TODO
-- Add hooks to go to contact section and make a new projects page.
-- Add technologies as hidden so that it's shown on phone.
+- Add filtering by tags for blogs
 
