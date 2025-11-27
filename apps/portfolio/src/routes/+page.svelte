@@ -54,7 +54,7 @@
 					<ContactForm {contactForm} />
 				</div>
 				<div>
-					<h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+					<h3 class="text-3xl font-bold mb-4">Get in Touch</h3>
 					<p class="text-muted-foreground mb-4">
 						I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out to me using the form, or through my social media channels.
 					</p>
