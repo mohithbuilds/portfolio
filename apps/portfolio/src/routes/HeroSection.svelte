@@ -74,7 +74,7 @@
 					</a>
 				</div>
 
-				<LinkButton class="mt-2 w-[9rem]" href="/Mohith_Engineering_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</LinkButton>
+				<LinkButton class="mt-2 w-[9rem]" href="/Mohith_Portfolio_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</LinkButton>
 			</div>
 		</div>
 	</div>
