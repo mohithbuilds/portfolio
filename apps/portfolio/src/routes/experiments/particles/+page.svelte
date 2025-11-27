@@ -1,137 +1,154 @@
-<script lang="ts">
-	import { particleStore, type ParticleSettings } from '@/lib/stores/particleStore.svelte';
-	import { onDestroy } from 'svelte';
-	import ParticleControls from './ParticleControls.svelte';
-	import { createParticleSystem, getImageData } from './particleSetup';
-	import { ParticleSystem } from './ParticleSystem';
-	import { X } from '@lucide/svelte';
-	import PageWrapper from '@/components/PageWrapper.svelte';
+<!--
+  THIS FILE IS DEPRECATED AND SHOULD NOT BE USED.
+  It is kept for historical reference.
 
-	let canvas = $state<HTMLCanvasElement | null>(null);
-	let particleSystem: ParticleSystem | null = null;
-	let mouseX = $state(0);
-	let mouseY = $state(0);
-	let innerWidth = $state(0);
-	let aspectRatio = $state(0);
+  The original content is commented out below.
+-->
 
-	let showControls = $state(true);
+<div style="padding: 2rem; text-align: center;">
+  <h1>This page has been deprecated.</h1>
+  <p>It is kept for historical reference.</p>
+  <a href="/">Go back to the homepage</a>
+</div>
 
-	const settings = particleStore<ParticleSettings>('particle-settings', {
-		numberOfParticles: 10_000,
-		trailIntensity: 0.05,
-		speedMultiplier: 0.5,
-		cursorRadius: 100,
-		cursorForce: 0.3,
-		turbulence: 0.5,
-		movementPattern: 'rain',
-		angle: 0,
-		cursorInteraction: false,
-		staticMode: false,
-		particleSize: {
-			min: 0.5,
-			max: 1.5,
-		},
-		particleShape: 'circle',
-		colorOverlay: {
-			enabled: false,
-			color: '#ffffff',
-			intensity: 0.5,
-		},
-	});
 
-	function updateParticleSystem(fullReinitialize: boolean = false) {
-		if (!canvas) return;
+<!--
+  <script lang="ts">
+  	import { particleStore, type ParticleSettings } from '@/lib/stores/particleStore.svelte';
+  	import { onDestroy } from 'svelte';
+  	import ParticleControls from './ParticleControls.svelte';
+  	import { createParticleSystem, getImageData } from './particleSetup';
+  	import { ParticleSystem } from './ParticleSystem';
+  	import { X } from '@lucide/svelte';
+  	import PageWrapper from '@/components/PageWrapper.svelte';
 
-		if (fullReinitialize) {
-			const ctx = canvas.getContext('2d');
-			if (!ctx) return;
+  	let canvas = $state<HTMLCanvasElement | null>(null);
+  	let particleSystem: ParticleSystem | null = null;
+  	let mouseX = $state(0);
+  	let mouseY = $state(0);
+  	let innerWidth = $state(0);
+  	let aspectRatio = $state(0);
 
-			if (particleSystem) {
-				particleSystem.stop();
-			}
+  	let showControls = $state(true);
 
-			const imageData = getImageData(canvas, image);
+  	const settings = particleStore<ParticleSettings>('particle-settings', {
+  		numberOfParticles: 10_000,
+  		trailIntensity: 0.05,
+  		speedMultiplier: 0.5,
+  		cursorRadius: 100,
+  		cursorForce: 0.3,
+  		turbulence: 0.5,
+  		movementPattern: 'rain',
+  		angle: 0,
+  		cursorInteraction: false,
+  		staticMode: false,
+  		particleSize: {
+  			min: 0.5,
+  			max: 1.5,
+  		},
+  		particleShape: 'circle',
+  		colorOverlay: {
+  			enabled: false,
+  			color: '#ffffff',
+  			intensity: 0.5,
+  		},
+  	});
 
-			if (!imageData) {
-				throw new Error('Failed to get image data');
-			}
+  	function updateParticleSystem(fullReinitialize: boolean = false) {
+  		if (!canvas) return;
 
-			particleSystem = createParticleSystem(canvas, settings.value, imageData);
-		} else {
-			particleSystem?.updateSettings({
-				trailIntensity: settings.value.trailIntensity,
-				speedMultiplier: settings.value.speedMultiplier,
-				cursorInteraction: settings.value.cursorInteraction,
-				cursorRadius: settings.value.cursorRadius,
-				cursorForce: settings.value.cursorForce,
-				staticMode: settings.value.staticMode,
-				colorOverlay: settings.value.colorOverlay,
-				particleConfig: {
-					turbulence: settings.value.turbulence,
-					minSize: settings.value.particleSize.min,
-					maxSize: settings.value.particleSize.max,
-					shape: settings.value.particleShape,
-				},
-			});
-		}
-	}
+  		if (fullReinitialize) {
+  			const ctx = canvas.getContext('2d');
+  			if (!ctx) return;
 
-	const image = new Image();
-	image.crossOrigin = 'anonymous';
-	image.src = '/images/particles/3.jpg';
+  			if (particleSystem) {
+  				particleSystem.stop();
+  			}
 
-	// Calculate aspect ratio when image loads
-	image.onload = () => {
-		aspectRatio = image.height / image.width;
+  			const imageData = getImageData(canvas, image);
 
-		if (canvas) {
-			canvas.width = innerWidth;
-			canvas.height = Math.floor(innerWidth * aspectRatio);
-			updateParticleSystem(true); // Initialize the particle system when image loads
-		}
-	};
+  			if (!imageData) {
+  				throw new Error('Failed to get image data');
+  			}
 
-	function handleMouseMove(event: MouseEvent) {
-		if (!canvas) return;
-		const rect = canvas.getBoundingClientRect();
-		mouseX = event.clientX - rect.left;
-		mouseY = event.clientY - rect.top;
-		particleSystem?.updateMousePosition(mouseX, mouseY);
-	}
+  			particleSystem = createParticleSystem(canvas, settings.value, imageData);
+  		} else {
+  			particleSystem?.updateSettings({
+  				trailIntensity: settings.value.trailIntensity,
+  				speedMultiplier: settings.value.speedMultiplier,
+  				cursorInteraction: settings.value.cursorInteraction,
+  				cursorRadius: settings.value.cursorRadius,
+  				cursorForce: settings.value.cursorForce,
+  				staticMode: settings.value.staticMode,
+  				colorOverlay: settings.value.colorOverlay,
+  				particleConfig: {
+  					turbulence: settings.value.turbulence,
+  					minSize: settings.value.particleSize.min,
+  					maxSize: settings.value.particleSize.max,
+  					shape: settings.value.particleShape,
+  				},
+  			});
+  		}
+  	}
 
-	onDestroy(() => {
-		particleSystem?.stop();
-	});
-</script>
+  	const image = new Image();
+  	image.crossOrigin = 'anonymous';
+  	image.src = '/images/particles/3.jpg';
 
-<svelte:window bind:innerWidth on:mousemove={handleMouseMove} />
+  	// Calculate aspect ratio when image loads
+  	image.onload = () => {
+  		aspectRatio = image.height / image.width;
 
-<PageWrapper>
-	<section class="flex min-h-[calc(100dvh-5rem)] flex-col items-center gap-4">
-		<a
-			href="/"
-			class="flex items-center gap-2 self-end opacity-50 transition-opacity hover:scale-110 hover:opacity-100"
-		>
-			<X class="size-10 sm:size-6" />
-			<span class="sr-only">home</span>
-		</a>
-		<div class="flex w-full max-w-(--breakpoint-md) flex-col gap-4">
-			<!-- svelte-ignore element_invalid_self_closing_tag -->
-			<canvas bind:this={canvas} class="min-h-[431px fadeIn h-auto w-full" />
-			<ParticleControls {settings} bind:showControls onUpdate={updateParticleSystem} />
-		</div>
-	</section>
-</PageWrapper>
+  		if (canvas) {
+  			canvas.width = innerWidth;
+  			canvas.height = Math.floor(innerWidth * aspectRatio);
+  			updateParticleSystem(true); // Initialize the particle system when image loads
+  		}
+  	};
 
-<style>
-	.fadeIn {
-		opacity: 1;
-		transition: opacity 1s 0.5s ease-in-out;
-	}
+  	function handleMouseMove(event: MouseEvent) {
+  		if (!canvas) return;
+  		const rect = canvas.getBoundingClientRect();
+  		mouseX = event.clientX - rect.left;
+  		mouseY = event.clientY - rect.top;
+  		particleSystem?.updateMousePosition(mouseX, mouseY);
+  	}
 
-	@starting-style {
-		.fadeIn {
-			opacity: 0;
-		}
-	}
-</style>
+  	onDestroy(() => {
+  		particleSystem?.stop();
+  	});
+  </script>
+
+  <svelte:window bind:innerWidth on:mousemove={handleMouseMove} />
+
+  <PageWrapper>
+  	<section class="flex min-h-[calc(100dvh-5rem)] flex-col items-center gap-4">
+  		<a
+  			href="/"
+  			class="flex items-center gap-2 self-end opacity-50 transition-opacity hover:scale-110 hover:opacity-100"
+  		>
+  			<X class="size-10 sm:size-6" />
+  			<span class="sr-only">home</span>
+  		</a>
+  		<div class="flex w-full max-w-(--breakpoint-md) flex-col gap-4">
+  			<!-- svelte-ignore element_invalid_self_closing_tag -->
+  			<canvas bind:this={canvas} class="min-h-[431px fadeIn h-auto w-full" />
+  			<ParticleControls {settings} bind:showControls onUpdate={updateParticleSystem} />
+  		</div>
+  	</section>
+  </PageWrapper>
+
+  <style>
+  	.fadeIn {
+  		opacity: 1;
+  		transition: opacity 1s 0.5s ease-in-out;
+  	}
+
+  	@starting-style {
+  		.fadeIn {
+  			opacity: 0;
+  		}
+  	}
+  </style>
+-->
+
