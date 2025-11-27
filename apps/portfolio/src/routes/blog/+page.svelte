@@ -8,7 +8,8 @@
 
 	const pageTitle = 'Blog | Mohith Nagendra';
 	const description =
-		'Articles and tutorials about web development, testing, and software engineering by Mohith Nagendra.';
+		'My articles and thoughts on software engineering, systems, and AI. All opinions are my own, not my employer\'s.';
+
 	const canonicalUrl = 'https://mohithn.vercel.app/blog';
 
 	// Get unique categories
