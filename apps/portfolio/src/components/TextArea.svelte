@@ -24,7 +24,7 @@
 		bind:value
 		{rows}
 		class="border-muted-foreground bg-card focus:border-accent-foreground focus:outline-accent-foreground rounded-sm border p-2"
-	/>
+	></textarea>
 	<div>
 		{#if error}
 			<p class="text-red-500">{error}</p>
