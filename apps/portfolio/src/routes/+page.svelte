@@ -12,6 +12,8 @@
 	let { data }: PageProps = $props();
 	let contactForm = $derived(data.contactForm);
 	let projects = $derived(data.page.projects);
+	let recentPost = $derived(data.page.recentPost);
+	let recentBlogs = $derived(recentPost ? [{ ...recentPost.metadata, slug: `/blog/${recentPost.metadata.slug}` }] : []);
 
 	// const experiments = [
 		// {
@@ -36,6 +38,11 @@
 			<h2 class="pb-4 text-3xl font-bold">Technologies</h2>
 			<Technologies />
 		</div>
+		<Divider />
+		<section>
+			<h2 class="pb-4 text-3xl font-bold">Recent Blogs</h2>
+			<List items={recentBlogs} />
+		</section>
 		<Divider />
 		<div>
 			<h2 class="pb-4 text-3xl font-bold">Projects</h2>
