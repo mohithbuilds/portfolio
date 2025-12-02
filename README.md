@@ -3,6 +3,10 @@
 Hi!
 This is a [TurboRepo](https://turbo.build/) containing my portfolio website. It contains the 'portfolio' app, which is a SvelteKit project. The website uses markdown files for content management instead of a traditional CMS.
 
+## Credits
+
+The foundational UI for this portfolio was adapted from https://www.kyrre.dev/. The original design has been significantly modified to incorporate a custom backend, a new menu bar, and several new pages including Projects, Experience, and Contact. The content is also now managed locally via markdown files.
+
 ## Getting started
 
 This projects is using [pnpm](https://pnpm.io/) as the package manager and [turbo](https://turbo.build/cli) as the build system. If you don't have pnpm installed, you can install it by running:
