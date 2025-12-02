@@ -64,6 +64,6 @@ export function scrollToTop() {
 type DateStyle = Intl.DateTimeFormatOptions['dateStyle'];
 
 export function formatDate(date: string | Date, dateStyle: DateStyle = 'medium', locale = 'en') {
-	const formatter = new Intl.DateTimeFormat(locale, { dateStyle });
+	const formatter = new Intl.DateTimeFormat(locale, { dateStyle, timeZone: 'UTC' });
 	return formatter.format(new Date(date));
 }
