@@ -44,7 +44,7 @@
 		"rehype-unwrap-images": "^1.0.0",
 		"remark-toc": "^9.0.0",
 		"shiki": "^3.4.2",
-		"svelte": "5.43.12",
+		"svelte": "5.45.2",
 		"svelte-check": "^4.2.1",
 		"svelte-sitemap": "^2.7.0",
 		"sveltekit-superforms": "^2.25.0",
