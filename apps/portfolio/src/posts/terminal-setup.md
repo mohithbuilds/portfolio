@@ -89,7 +89,7 @@ Here are some of the key players in my setup:
 I'm not the only one passionate about this kind of setup. I found this excellent video from the YouTube channel **Dreams of Autonomy** that covers many of the same concepts and tools discussed here. It's a great visual guide to see how these elements can come together.
 
 <div style="display: flex; justify-content: center;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ud7YxC33Z3w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video embedded from Dreams of Autonomy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ud7YxC33Z3w" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video embedded from Dreams of Autonomy"></iframe>
 </div>
 
 ### Conclusion
