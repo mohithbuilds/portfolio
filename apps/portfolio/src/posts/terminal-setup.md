@@ -2,7 +2,7 @@
 title: "Coding in Comfort: My Personalized Terminal Setup"
 id: 'personalized-terminal-setup'
 published: true
-publishedAt: '2025-12-01'
+publishedAt: '2025-12-03'
 layout: 'blog'
 categories: ['CLI', 'Development', 'Productivity', 'Neovim']
 slug: 'terminal-setup'
