@@ -4,12 +4,12 @@
 		name: string;
 		rows?: number;
 		placeholder: string;
-		required: boolean;
+		required?: boolean;
 		value: string | number | boolean | null | undefined;
 		error: string[] | undefined;
 	};
 
-	let { label, name, rows, placeholder, required, value = $bindable(), error = $bindable() }: Props = $props();
+	let { label, name, rows, placeholder, required = false, value = $bindable(), error = $bindable() }: Props = $props();
 </script>
 
 <div class="grid">
