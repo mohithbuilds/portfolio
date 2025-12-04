@@ -11,6 +11,13 @@
 	const description =
 		data.meta.seoDescription || data.meta.description || `Read ${data.meta.title} by ${data.meta.author}`;
 	const ogImage = data.meta.ogImage || 'https://mohithn.vercel.app/images/og-mohithn.png';
+
+	function safeJsonLd(obj: object) {
+		return JSON.stringify(obj)
+			.replace(/</g, '\\u003C')
+			.replace(/>/g, '\\u003E')
+			.replace(/&/g, '\\u0026');
+	}
 </script>
 
 <svelte:head>
@@ -40,7 +47,7 @@
 	<meta name="twitter:image" content={ogImage} />
 
 	<script type="application/ld+json">
-		{JSON.stringify({
+		{@html safeJsonLd({
 			'@context': 'https://schema.org',
 			'@type': 'BlogPosting',
 			mainEntityOfPage: {
@@ -57,10 +64,10 @@
 			},
 			publisher: {
 				'@type': 'Organization',
-				name': 'Mohith Nagendra',
+				name: 'Mohith Nagendra',
 				logo: {
 					'@type': 'ImageObject',
-					url': 'https://mohith.dev/mn1.svg'
+					url: 'https://mohith.dev/mn1.svg'
 				}
 			},
 			datePublished: data.meta.publishedAt
