@@ -38,6 +38,34 @@
 	<meta name="twitter:title" content={pageTitle} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={ogImage} />
+
+	<script type="application/ld+json">
+		{JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			mainEntityOfPage: {
+				'@type': 'WebPage',
+				'@id': canonicalUrl
+			},
+			headline: pageTitle,
+			description: description,
+			image: ogImage,
+			author: {
+				'@type': 'Person',
+				name: data.meta.author,
+				url: 'https://mohith.dev/about/mohithnagendra'
+			},
+			publisher: {
+				'@type': 'Organization',
+				name': 'Mohith Nagendra',
+				logo: {
+					'@type': 'ImageObject',
+					url': 'https://mohith.dev/mn1.svg'
+				}
+			},
+			datePublished: data.meta.publishedAt
+		})}
+	</script>
 </svelte:head>
 
 <div class="relative flex flex-col gap-8 pt-6 sm:pt-12">
