@@ -14,7 +14,7 @@
 
 	onMount(async () => {
 		if (articleEl) {
-			// Give Svelte a moment to render the content
+			// Wait for pending DOM updates to complete
 			await tick();
 			const content = articleEl.innerHTML;
 			headings = extractHeadings(content);
