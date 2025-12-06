@@ -18,33 +18,35 @@
 		<div class="hero-text flex flex-col gap-4 sm:gap-8 sm:text-justify">
 			<div>
 				<h1
-					class="flex items-end gap-2 text-pretty break-words text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-6xl"
+					class="flex items-end gap-2 text-4xl leading-none font-extrabold tracking-tight text-pretty break-words md:text-5xl lg:text-6xl"
 				>
 					Hi, I'm Mohith!
 				</h1>
-				<span class="flex items-center gap-1 text-pretty text-base font-normal mt-2">
+				<span class="mt-2 flex items-center gap-1 text-base font-normal text-pretty">
 					<MapPin size={14} />
 					Seattle
 				</span>
 			</div>
 
-
-
-			<h2 class="text-pretty prose sm:text-lg lg:text-xl">
-				I build <strong>scalable, reliable, and data-intensive</strong> systems, including backend services, APIs, and data pipelines, optimized for <strong>high throughput, low latency</strong>, and real-world impact.
+			<h2 class="prose text-pretty sm:text-lg lg:text-xl">
+				I build <strong>scalable, reliable, and data-intensive</strong> systems, including backend services, APIs, and
+				data pipelines, optimized for <strong>high throughput, low latency</strong>, and real-world impact.
 			</h2>
 			<!-- TODO: idea - make the text crumble or some other effect when the gradient comes over the text -->
-			<p class="text-pretty prose sm:text-lg text-left">
-				I code with purpose, crafting efficient, clean, and maintainable solutions that respect strong design principles and deliver measurable value.
-				<span class="hidden sm:inline">My work focuses on building systems that are fault-tolerant, high-performing, and resilient, helping organizations solve complex technical and
-  business challenges through thoughtful design and precise implementation.</span>
+			<p class="prose text-left text-pretty sm:text-lg">
+				I code with purpose, crafting efficient, clean, and maintainable solutions that respect strong design principles
+				and deliver measurable value.
+				<span class="hidden sm:inline"
+					>My work focuses on building systems that are fault-tolerant, high-performing, and resilient, helping
+					organizations solve complex technical and business challenges through thoughtful design and precise
+					implementation.</span
+				>
 			</p>
-
 
 			<div class="flex flex-col gap-3">
 				<AnimatedCounter {initialLikes} slug="/" />
 
-				<div class="w-[9rem] flex justify-between">
+				<div class="flex w-[9rem] justify-between">
 					<a
 						href="https://github.com/mohithbuilds"
 						target="_blank"
@@ -74,7 +76,7 @@
 					</a>
 				</div>
 
-				<LinkButton class="mt-2 w-[9rem]" href="/resume" >Resume</LinkButton>
+				<LinkButton class="mt-2 w-[9rem]" href="/resume">Resume</LinkButton>
 			</div>
 		</div>
 	</div>

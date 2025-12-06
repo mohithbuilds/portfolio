@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { Card, CardDescription, CardHeader, CardTitle } from '$lib/components/ui/card';
 
-
 	let { data } = $props();
 
 	const pageTitle = 'Projects | Mohith Nagendra';
-	const description = 'A collection of projects by Mohith Nagendra, showcasing skills in software engineering, data analysis, systems, AI, ML, and more.';
+	const description =
+		'A collection of projects by Mohith Nagendra, showcasing skills in software engineering, data analysis, systems, AI, ML, and more.';
 	const canonicalUrl = 'https://mohithn.vercel.app/projects';
 </script>
 
@@ -20,7 +20,7 @@
 	<meta name="twitter:description" content={description} />
 </svelte:head>
 
-<div class="mx-auto max-w-[1200px] px-6 pb-12 pt-8 sm:pt-4">
+<div class="mx-auto max-w-[1200px] px-6 pt-8 pb-12 sm:pt-4">
 	<header class="mb-8">
 		<h1 class="mb-4 text-4xl font-bold">Projects</h1>
 		<p class="text-muted-foreground max-w-[600px] text-lg">{description}</p>
@@ -31,7 +31,7 @@
 			{#each data.projects as project}
 				<Card class="bg-card/50 hover:bg-card border-foreground/20 group relative overflow-hidden transition-colors">
 					<CardHeader class="space-y-4 p-6">
-						<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+						<div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 							<CardTitle class="text-xl">
 								<a
 									href={`/projects/${project.slug}`}
@@ -40,7 +40,6 @@
 									{project.title}
 								</a>
 							</CardTitle>
-
 						</div>
 						{#if project.description}
 							<CardDescription class="line-clamp-2">{project.description}</CardDescription>

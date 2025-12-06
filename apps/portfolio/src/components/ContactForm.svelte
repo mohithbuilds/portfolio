@@ -9,7 +9,13 @@
 
 	let { contactForm }: { contactForm: SuperValidated<Infer<ContactForm>> } = $props();
 
-	const { form: formData, enhance, errors, submitting, reset } = superForm(contactForm, {
+	const {
+		form: formData,
+		enhance,
+		errors,
+		submitting,
+		reset,
+	} = superForm(contactForm, {
 		onResult: ({ result }) => {
 			if (result.status === 200) {
 				toast.custom(CustomToast, {
@@ -32,7 +38,7 @@
 			if (form.message) {
 				reset();
 			}
-		}
+		},
 	});
 </script>
 

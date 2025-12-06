@@ -6,11 +6,10 @@
 -->
 
 <div style="padding: 2rem; text-align: center;">
-  <h1>This page has been deprecated.</h1>
-  <p>It is kept for historical reference.</p>
-  <a href="/">Go back to the homepage</a>
+	<h1>This page has been deprecated.</h1>
+	<p>It is kept for historical reference.</p>
+	<a href="/">Go back to the homepage</a>
 </div>
-
 
 <!--
   <script lang="ts">

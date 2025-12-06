@@ -13,12 +13,7 @@ keyFeatures:
   - 'Concurrent programming for simultaneous registration'
   - 'Increased system throughput by up to 50%'
 technologies: ['Java']
-images: [
-  {
-    url: '/images/projects/registration.png',
-    alt: 'University Registration System Screenshot'
-  }
-]
+images: [{ url: '/images/projects/registration.png', alt: 'University Registration System Screenshot' }]
 featured: true
 order: 3
 ---

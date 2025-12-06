@@ -36,7 +36,7 @@
 </script>
 
 <div
-	class="blob pointer-events-none absolute left-0 top-0 z-50 size-10 select-none rounded-full"
+	class="blob pointer-events-none absolute top-0 left-0 z-50 size-10 rounded-full select-none"
 	style:transform
 	style:background={`linear-gradient(30deg, ${color[0]} 0%, ${color[1]} 100%)`}
 ></div>

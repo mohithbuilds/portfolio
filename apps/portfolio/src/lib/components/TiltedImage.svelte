@@ -12,7 +12,7 @@
 
 	const springConfig = {
 		stiffness: 0.01,
-		damping: 0.1
+		damping: 0.1,
 	};
 
 	mouseX = spring(0, springConfig);
@@ -58,7 +58,7 @@
 
 <div
 	class="card-wrapper"
-	bind:this="{card}"
+	bind:this={card}
 	style="--mouseX: {$mouseX}px; --mouseY: {$mouseY}px; --rotateX: {$rotateX}deg; --rotateY: {$rotateY}deg;"
 >
 	<div class="card" style="border-color: {borderColor};">

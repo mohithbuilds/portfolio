@@ -14,12 +14,7 @@ keyFeatures:
   - 'Robust error handling'
   - 'AWS integration for data storage and authentication'
 technologies: ['Java', 'AWS']
-images: [
-  {
-    url: '/images/projects/todo.png',
-    alt: 'TaskMaster Application Screenshot'
-  }
-]
+images: [{ url: '/images/projects/todo.png', alt: 'TaskMaster Application Screenshot' }]
 featured: true
 order: 4
 ---

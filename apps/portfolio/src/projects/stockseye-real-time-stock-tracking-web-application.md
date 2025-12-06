@@ -13,17 +13,12 @@ keyFeatures:
   - 'Integration with financial data provider API'
   - 'Live data visualization with Chart.js'
 technologies: ['React.js', 'Chart.js', 'JavaScript']
-images: [
-  {
-    url: '/images/projects/stocks.jpg',
-    alt: 'StocksEye Screenshot'
-  }
-]
+images: [{ url: '/images/projects/stocks.jpg', alt: 'StocksEye Screenshot' }]
 featured: true
 order: 8
 ---
 
-StocksEye is a web application designed to track stock prices and provide real-time updates to users. *(Note: This project is currently under development.)*
+StocksEye is a web application designed to track stock prices and provide real-time updates to users. _(Note: This project is currently under development.)_
 
 ## Key Features
 

@@ -5,10 +5,7 @@ import type { EntryGenerator, PageLoad } from './$types';
 export const load: PageLoad = async ({ params, data }) => {
 	const { slug } = params;
 
-	const [project, allProjects] = await Promise.all([
-		getProject(slug),
-		getAllProjects(),
-	]);
+	const [project, allProjects] = await Promise.all([getProject(slug), getAllProjects()]);
 
 	if (!project) {
 		throw error(404, 'Project not found');

@@ -32,7 +32,7 @@
 			transition:blur={{ duration: 350 }}
 		>
 			<div
-				class="fixed inset-0 h-full w-full bg-black bg-opacity-50"
+				class="bg-opacity-50 fixed inset-0 h-full w-full bg-black"
 				role="presentation"
 				onclick={() => (selectedImage = null)}
 			></div>
@@ -49,7 +49,7 @@
 					class="max-h-screen rounded-lg object-cover object-top"
 				/>
 				<button
-					class="absolute right-5 top-5 m-4 rounded-full bg-black bg-opacity-50 p-2 text-white"
+					class="bg-opacity-50 absolute top-5 right-5 m-4 rounded-full bg-black p-2 text-white"
 					onclick={() => (selectedImage = null)}
 					transition:fade={{ duration: 350, delay: 200 }}
 				>

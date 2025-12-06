@@ -19,7 +19,6 @@ export const POST: RequestHandler = async ({ request }) => {
 		} else {
 			return error(500, result.error || 'An error occurred');
 		}
-
 	} catch (e) {
 		console.log(e);
 		if (e instanceof Error) {

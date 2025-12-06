@@ -2,7 +2,6 @@
 	import { PUBLIC_POSTHOG_API_KEY } from '$env/static/public';
 	// import { PUBLIC_PLAUSIBLE_SCRIPT_URL, PUBLIC_POSTHOG_API_KEY } from '$env/static/public';
 
-
 	import { browser } from '$app/environment';
 	import posthog from 'posthog-js';
 
@@ -17,6 +16,7 @@
 		}
 	});
 </script>
+
 <!---->
 <!-- <svelte:head> -->
 <!-- 	<script defer data-domain="mohithn.vercel.app" src={PUBLIC_PLAUSIBLE_SCRIPT_URL}></script> -->

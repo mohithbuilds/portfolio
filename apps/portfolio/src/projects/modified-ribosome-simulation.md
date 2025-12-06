@@ -14,12 +14,7 @@ keyFeatures:
   - 'Manipulates the protein building process'
   - 'Reads codon mappings from files'
 technologies: ['Python']
-images: [
-  {
-    url: '/images/projects/ribosomes.jpg',
-    alt: 'Modified Ribosome Simulation Screenshot'
-  }
-]
+images: [{ url: '/images/projects/ribosomes.jpg', alt: 'Modified Ribosome Simulation Screenshot' }]
 featured: true
 order: 6
 ---

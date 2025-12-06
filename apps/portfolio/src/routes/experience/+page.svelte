@@ -4,9 +4,9 @@
 			company: 'Amazon',
 			date: 'August 2025 - Present',
 			title: 'Software Development Engineer',
-			content:`
+			content: `
 				Building 🚀
-			`
+			`,
 		},
 		{
 			company: 'PMG',
@@ -19,7 +19,7 @@
 					<li>Developed client insights agent surfacing client-specific analytics, reducing reporting time by 60% across 50+ analysts</li>
 					<li>Identified key limitations in analyst workflows and engineered AI-driven solutions to address them</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'Allergan Data Labs',
@@ -31,7 +31,7 @@
 					<li>Translated direct customer feedback into actionable engineering requirements, developing new features and refining core business logic with a strong focus on the end-user experience</li>
 					<li>Contributed to the development of microservices in TypeScript and Go, implementing optimizations that reduced service latency and improved system reliability</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'Oracle',
@@ -44,7 +44,7 @@
 					<li>Performed exploratory data analysis (EDA) and feature engineering on ADS-B data, training an ML model to predict flight ETAs</li>
 					<li>Implemented an LLM to streamline ticket resolution processes for both internal operations and client-facing applications</li>
 				</ul>
-			`
+			`,
 		},
 
 		{
@@ -57,7 +57,7 @@
 					<li>Crafted responsive email templates achieving 99.8% delivery rate through cross-platform compatibility testing</li>
 					<li>Constructed Datadog monitoring dashboards for tracking email metrics and enabling proactive issue resolution</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'NitesOut',
@@ -69,7 +69,7 @@
 					<li>Designed intuitive UI/UX and implemented secure payment processing API handling $50K+ in monthly transactions</li>
 					<li>Automated event alerts through Firebase Cloud Messaging, boosting attendance rates by 18%</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'Airweb Digital',
@@ -81,7 +81,7 @@
 					<li>Formulated a visibility ranking model to optimize ad placement, enhancing workflow efficiency by 90%</li>
 					<li>Presented technical findings to CEO and partners, translating complex ML concepts into actionable business insights</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'Cornell Tech(Break Through Tech)',
@@ -94,7 +94,7 @@
 					<li>Designed interactive frontend using React and Tailwind CSS, resulting in 95% positive user feedback on UI/UX</li>
 					<li>Collaborated with Microsoft engineer mentor to establish best practices in code architecture and documentation</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'Miles IT',
@@ -106,7 +106,7 @@
 					<li>Authored documentation and training materials for new system, enabling 100% adoption rate across 25+ team members</li>
 					<li>Earned certification after completing 30 hours of training in Desktop, Networks, Servers, and Cloud Service Technologies</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'UMD FIRE',
@@ -117,7 +117,7 @@
 					<li>Led research team analyzing DNA configurations using Python and R, improving analysis performance/accuracy by 25%</li>
 					<li>Optimized genomic data processing workflows leveraging C++ and parallel computing, reducing execution time by 65%</li>
 				</ul>
-			`
+			`,
 		},
 		{
 			company: 'FIRST',
@@ -130,8 +130,8 @@
 					<li>Provided comprehensive mentorship across all competition categories, including robot design, programming, project management, and presentation skills</li>
 					<li>Fostered critical skills in leadership and collaborative problem-solving, championing the FIRST Core Values of innovation, inclusion, and Gracious Professionalism®</li>
 				</ul>
-			`
-		}
+			`,
+		},
 	];
 
 	const educations = [
@@ -145,22 +145,19 @@
 				'Core Fundamentals: Object-Oriented Programming, Data Structures, Algorithms, Computer Systems',
 				'Key Minor Classes: Entrepreneurial Finance, Entrepreneurial Thinking, Growth Strategies',
 				'Extracurriculars: BigTh!nk AI and Google Developer Student Club',
-				'Awards: Dean’s List (2022-2025)'
-			]
+				'Awards: Dean’s List (2022-2025)',
+			],
 		},
 		{
 			university: 'Robbinsville High School',
 			date: 'September 2018 - June 2022',
 			degree: 'High School Diploma',
-			details: [
-				'GPA: 4.3/4.0',
-				'Awards: AP Scholar with Distinction, Honor Roll all years'
-			]
-		}
+			details: ['GPA: 4.3/4.0', 'Awards: AP Scholar with Distinction, Honor Roll all years'],
+		},
 	];
 </script>
 
-<div class="container mx-auto lg:max-w-4xl py-12">
+<div class="container mx-auto py-12 lg:max-w-4xl">
 	<h1 class="mb-8 text-4xl font-bold">Experience & Education</h1>
 
 	<section>
@@ -170,8 +167,8 @@
 				<div>
 					<h3 class="text-xl font-semibold">{exp.title}</h3>
 					<div class="flex flex-col md:flex-row md:items-baseline md:justify-between">
-						<h4 class="font-medium font-semibold text-muted-foreground">{exp.company}</h4>
-						<p class="font-medium text-muted-foreground md:ml-4">{exp.date}</p>
+						<h4 class="text-muted-foreground font-medium font-semibold">{exp.company}</h4>
+						<p class="text-muted-foreground font-medium md:ml-4">{exp.date}</p>
 					</div>
 					<p class="mt-2 text-base leading-relaxed">{@html exp.content}</p>
 				</div>
@@ -186,9 +183,9 @@
 				<div>
 					<div class="flex items-baseline justify-between">
 						<h3 class="text-xl font-semibold">{edu.degree}</h3>
-						<p class="text-sm text-muted-foreground">{edu.date}</p>
+						<p class="text-muted-foreground text-sm">{edu.date}</p>
 					</div>
-					<h4 class="font-medium text-muted-foreground">{edu.university}</h4>
+					<h4 class="text-muted-foreground font-medium">{edu.university}</h4>
 					<ul class="mt-2 list-disc pl-5 text-base">
 						{#each edu.details as detail}
 							<li>{detail}</li>
