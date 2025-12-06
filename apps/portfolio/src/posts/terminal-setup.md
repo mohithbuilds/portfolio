@@ -16,6 +16,8 @@ For many developers, the terminal is home. It's where we run commands, manage fi
 
 In this post, I want to walk you through my personal command-line sanctuary. It's a combination of tools that work together to create a seamless, powerful, and aesthetically pleasing environment.
 
+## My Terminal Environment
+
 ### The Foundation: iTerm2
 
 <figure>
@@ -65,24 +67,32 @@ Beyond the prompt, I use a couple of other tools to make my shell experience fas
 
 - **Fuzzy History Search with FZF:** Standard shell history (`Ctrl+R`) is good, but fuzzy searching is a game-changer. I use `fzf` to provide an interactive, filterable list of my entire command history. I can just type a few disconnected parts of the command I'm looking for, and `fzf` finds it instantly. It feels like my shell is reading my mind.
 
-### At Home in Neovim (nvim)
+## At Home in Neovim
 
 <figure>
 <img src="/images/blogs/nvim.png" alt="Neovim Live Grep">
 <figcaption style="text-align: center;">Neovim in action, demonstrating the fuzzy live grep feature provided by Telescope.nvim.</figcaption>
 </figure>
 
-At the heart of my workflow is my code editor, **Neovim**. My setup is managed by `lazy.nvim`, a modern plugin manager that makes it easy to declare and configure plugins in Lua. The configuration is broken down into small, manageable files for each plugin, which keeps things tidy.
+At the heart of my workflow is my code editor, **Neovim**. My setup is managed by `lazy.nvim`, a modern plugin manager that makes it easy to declare and configure plugins in Lua. The configuration is broken down into small, manageable files for each plugin, which keeps things tidy. Here are some of the key players in my setup.
 
-Here are some of the key players in my setup:
-- **Core Experience:** `which-key.lua` is a lifesaver, popping up a list of available keymaps so I never get lost. The overall look is handled by a custom colorscheme, and my status line is powered by the excellent `lualine.nvim`.
-- **File Navigation & Fuzzy Finding:** Instead of a traditional file tree, I use `oil.nvim`, which turns directories into regular buffers that you can edit and navigate like any other file. For finding anything else, `telescope.nvim` is the star of the show, providing an incredibly fast fuzzy search for files, buffers, text, and more.
-- **Coding & LSP:** For code intelligence, `mason.lua` and `lspconfig.lua` work together to automatically install and configure language servers. This provides essential IDE features like go-to-definition and inline diagnostics. `nvim-treesitter` ensures rich, accurate syntax highlighting, while `nvim-cmp` handles powerful autocompletion.
-- **Git Integration:** For quick git operations, I use `lazygit.lua` which provides a full terminal UI for staging, committing, and managing my git workflow without leaving the editor.
+### Core Experience & UI
+`which-key.lua` is a lifesaver, popping up a list of available keymaps so I never get lost. The overall look is handled by a custom colorscheme, and my status line is powered by the excellent `lualine.nvim`.
+
+### File Navigation & Fuzzy Finding
+Instead of a traditional file tree, I use `oil.nvim`, which turns directories into regular buffers that you can edit and navigate like any other file. For finding anything else, `telescope.nvim` is the star of the show, providing an incredibly fast fuzzy search for files, buffers, text, and more.
+
+### Code Intelligence & LSP
+For code intelligence, `mason.lua` and `lspconfig.lua` work together to automatically install and configure language servers. This provides essential IDE features like go-to-definition and inline diagnostics. `nvim-treesitter` ensures rich, accurate syntax highlighting, while `nvim-cmp` handles powerful autocompletion.
+
+### Git Integration
+For quick git operations, I use `lazygit.lua` which provides a full terminal UI for staging, committing, and managing my git workflow without leaving the editor.
 <figure>
   <img src="/images/blogs/lazygit.png" alt="Lazygit Interface">
   <figcaption style="text-align: center;">The Lazygit terminal UI running inside Neovim, a powerful way to manage Git operations without leaving the editor.</figcaption>
 </figure>
+
+## Final Thoughts
 
 ### Further Exploration
 
