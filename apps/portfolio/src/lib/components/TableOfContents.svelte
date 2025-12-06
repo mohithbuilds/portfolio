@@ -181,6 +181,7 @@
 		max-height: calc(100vh - 100px);
 		overflow-y: auto;
 		width: 100%;
+		z-index: 30;
 	}
 
 	.toc-title {
@@ -231,6 +232,7 @@
 		width: 100%;
 		height: 100%;
 		overflow: visible;
+		pointer-events: none;
 	}
 
 	.toc-progress-track {
