@@ -15,7 +15,13 @@
 
 	if (browser) {
 		beforeNavigate(() => posthog.capture('$pageleave'));
-		afterNavigate(() => posthog.capture('$pageview'));
+		afterNavigate(() => {
+			posthog.capture('$pageview');
+			const scroller = document.getElementById('page-content');
+			if (scroller) {
+				scroller.scrollTop = 0;
+			}
+		});
 	}
 
 	type Props = {
