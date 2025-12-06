@@ -20,6 +20,10 @@
 			const scroller = document.getElementById('page-content');
 			if (scroller) {
 				scroller.scrollTop = 0;
+			} else {
+				// Fallback: scroll window and document root to top
+				window.scrollTo(0, 0);
+				document.documentElement.scrollTop = 0;
 			}
 		});
 	}

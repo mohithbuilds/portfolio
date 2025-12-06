@@ -5,20 +5,19 @@
 </script>
 
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import TableOfContents from '$lib/components/TableOfContents.svelte';
 	import { extractHeadings, type Heading } from '$lib/extractHeadings';
 
 	let headings: Heading[] = [];
 	let articleEl: HTMLElement;
 
-	onMount(() => {
+	onMount(async () => {
 		if (articleEl) {
 			// Give Svelte a moment to render the content
-			setTimeout(() => {
-				const content = articleEl.innerHTML;
-				headings = extractHeadings(content);
-			}, 100);
+			await tick();
+			const content = articleEl.innerHTML;
+			headings = extractHeadings(content);
 		}
 	});
 </script>

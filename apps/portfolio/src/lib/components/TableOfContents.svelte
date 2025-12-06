@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, tick } from 'svelte';
 	import type { Heading } from '$lib/extractHeadings';
 
 	export let headings: Heading[];
@@ -7,25 +7,24 @@
 	let lastActiveId: string | null = null;
 	let visibleIds: string[] = [];
 	let isClickScrolling = false;
-	let clickScrollTimeout: number;
+	let clickScrollTimeout: ReturnType<typeof setTimeout>;
 
 	let trackPathData = '';
 	let trackPathLength = 1; // Initialize to a non-zero value
     let segmentData: {start: number, end: number}[] = [];
 
-	onMount(() => {
+	onMount(async () => {
 		const scroller = document.getElementById('page-content');
 		if (!scroller) return;
 
-        setTimeout(() => {
-            const liElements = headings.map((h) => document.getElementById(`toc-${h.id}`)).filter(Boolean) as HTMLElement[];
-            if (liElements.length === 0) return;
+		await tick();
+		const liElements = headings.map((h) => document.getElementById(`toc-${h.id}`)).filter(Boolean) as HTMLElement[];
+		if (liElements.length === 0) return;
 
-            const { path, totalLength, segments } = getPathData(liElements);
-            trackPathData = path;
-            trackPathLength = totalLength;
-            segmentData = segments;
-        }, 100);
+		const { path, totalLength, segments } = getPathData(liElements);
+		trackPathData = path;
+		trackPathLength = totalLength;
+		segmentData = segments;
 
 
 		const observer = new IntersectionObserver(
@@ -56,7 +55,10 @@
 			}
 		});
 
-		return () => observer.disconnect();
+		return () => {
+			observer.disconnect();
+			clearTimeout(clickScrollTimeout);
+		};
 	});
 
     function getPathData(liElements: HTMLElement[]) {
@@ -146,7 +148,7 @@
 </script>
 
 <aside class="toc-sidebar">
-	<nav>
+	<nav aria-label="Table of Contents">
 		<h3 class="toc-title">On this page</h3>
 		<ul class="relative">
             <svg class="progress-svg">
