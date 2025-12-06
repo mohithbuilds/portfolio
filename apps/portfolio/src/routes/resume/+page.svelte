@@ -6,14 +6,20 @@
 	import type { ResumeAccessForm } from '$lib/schema/resumeAccessSchema';
 	import CustomToast from '@/components/CustomToast.svelte';
 	import Input from '@/components/Input.svelte';
-    import Button from '@/components/Button.svelte';
-    import TextArea from '@/components/TextArea.svelte';
+	import Button from '@/components/Button.svelte';
+	import TextArea from '@/components/TextArea.svelte';
 
 	let { data }: { data: { form: SuperValidated<Infer<ResumeAccessForm>> } } = $props();
 
-    let formSubmitted = $state(false);
+	let formSubmitted = $state(false);
 
-	const { form: formData, enhance, errors, submitting, form } = superForm(data.form, {
+	const {
+		form: formData,
+		enhance,
+		errors,
+		submitting,
+		form,
+	} = superForm(data.form, {
 		onResult: ({ result }) => {
 			if (result.status === 200) {
 				toast.custom(CustomToast, {
@@ -22,7 +28,7 @@
 						message: 'You can now view the resume.',
 					},
 				});
-                formSubmitted = true;
+				formSubmitted = true;
 			} else if (result.status === 500) {
 				toast.custom(CustomToast, {
 					componentProps: {
@@ -37,66 +43,66 @@
 </script>
 
 {#if formSubmitted}
-    <div class="w-full h-full" transition:fade>
-        <iframe src="/Mohith_Engineering_Resume.pdf" class="w-full h-screen" title="Mohith's Resume"></iframe>
-    </div>
+	<div class="h-full w-full" transition:fade>
+		<iframe src="/Mohith_Engineering_Resume.pdf" class="h-screen w-full" title="Mohith's Resume"></iframe>
+	</div>
 {:else}
-    <div class="flex flex-col items-center justify-center min-h-[60vh] gap-4" transition:fade>
-        <div class="text-center">
-            <h1 class="text-2xl font-bold">Access Resume</h1>
-            <p class="text-muted-foreground">Please provide your details to view the resume.</p>
-        </div>
-        <form id="resume-access" method="POST" use:enhance class="flex max-w-lg flex-col gap-4 w-full p-4">
-            <Input
-                label="Name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                required
-                bind:value={$formData.name}
-                bind:error={$errors.name}
-            />
-            <Input
-                label="Company"
-                name="company"
-                type="text"
-                placeholder="Your company"
-                required
-                bind:value={$formData.company}
-                bind:error={$errors.company}
-            />
+	<div class="flex min-h-[60vh] flex-col items-center justify-center gap-4" transition:fade>
+		<div class="text-center">
+			<h1 class="text-2xl font-bold">Access Resume</h1>
+			<p class="text-muted-foreground">Please provide your details to view the resume.</p>
+		</div>
+		<form id="resume-access" method="POST" use:enhance class="flex w-full max-w-lg flex-col gap-4 p-4">
+			<Input
+				label="Name"
+				name="name"
+				type="text"
+				placeholder="Your name"
+				required
+				bind:value={$formData.name}
+				bind:error={$errors.name}
+			/>
+			<Input
+				label="Company"
+				name="company"
+				type="text"
+				placeholder="Your company"
+				required
+				bind:value={$formData.company}
+				bind:error={$errors.company}
+			/>
 
-            <Input
-                label="Email"
-                name="email"
-                type="email"
-                placeholder="Your email (optional)"
-                bind:value={$formData.email}
-                bind:error={$errors.email}
-            />
+			<Input
+				label="Email"
+				name="email"
+				type="email"
+				placeholder="Your email (optional)"
+				bind:value={$formData.email}
+				bind:error={$errors.email}
+			/>
 
-            <TextArea
-                label="Message"
-                name="message"
-                placeholder="Your message (optional)"
-                rows={3}
-                bind:value={$formData.message}
-                bind:error={$errors.message}
-            />
+			<TextArea
+				label="Message"
+				name="message"
+				placeholder="Your message (optional)"
+				rows={3}
+				bind:value={$formData.message}
+				bind:error={$errors.message}
+			/>
 
-            <!-- 🍯 honeypot 🤖 -->
-            <div class="absolute opacity-0">
-                <input type="checkbox" id="botCheck" name="botCheck" tabindex="-1" />
-                <label for="botCheck"> I'm not a robot </label>
-            </div>
+			<!-- 🍯 honeypot 🤖 -->
+			<div class="absolute opacity-0">
+				<input type="checkbox" id="botCheck" name="botCheck" tabindex="-1" />
+				<label for="botCheck"> I'm not a robot </label>
+			</div>
 
-            <button
-                type="submit"
-                class="bg-background border-muted-foreground focus:border-accent-foreground focus:outline-accent-foreground border p-4 focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
-                disabled={$submitting}
-            >
-                {$submitting ? 'Submitting...' : 'Submit'}
-            </button>
-        </form>
-    </div>
+			<button
+				type="submit"
+				class="bg-background border-muted-foreground focus:border-accent-foreground focus:outline-accent-foreground border p-4 focus:outline-hidden disabled:cursor-not-allowed disabled:opacity-50"
+				disabled={$submitting}
+			>
+				{$submitting ? 'Submitting...' : 'Submit'}
+			</button>
+		</form>
+	</div>
 {/if}

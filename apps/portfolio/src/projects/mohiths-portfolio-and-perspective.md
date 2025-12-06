@@ -1,7 +1,7 @@
 ---
 title: "Mohith's Portfolio & Perspective"
 slug: 'mohiths-portfolio-and-perspective'
-description: "A personal portfolio and blog website built with Hugo and hosted on Netlify, featuring a responsive design and an integrated blog to share insights on technology."
+description: 'A personal portfolio and blog website built with Hugo and hosted on Netlify, featuring a responsive design and an integrated blog to share insights on technology.'
 href: 'https://mohithn.netlify.app/blogs/'
 linkTitle: 'Demo'
 gitHubLink: 'https://github.com/mohithbuilds/portfolio-old.git'
@@ -13,12 +13,7 @@ keyFeatures:
   - 'Integrated Blog for Knowledge Sharing'
   - 'Hosted on Netlify with CI/CD'
 technologies: ['Hugo', 'Bootstrap', 'Javascript', 'HTML', 'CSS', 'Netlify']
-images: [
-  {
-    url: '/images/projects/NH.jpg',
-    alt: "Mohith's Portfolio & Perspective Screenshot"
-  }
-]
+images: [{ url: '/images/projects/NH.jpg', alt: "Mohith's Portfolio & Perspective Screenshot" }]
 featured: false
 order: 11
 ---

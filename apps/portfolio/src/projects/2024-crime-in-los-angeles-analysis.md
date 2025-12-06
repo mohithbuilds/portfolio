@@ -14,12 +14,7 @@ keyFeatures:
   - 'Predictive Modeling for Victim Demographics'
   - 'High-Risk Area and Time Identification'
 technologies: ['Python', 'Pandas', 'NumPy', 'SciPy', 'Matplotlib', 'Scikit-learn', 'Seaborn']
-images: [
-  {
-    url: '/images/projects/la.jpg',
-    alt: '2024 Crime in Los Angeles Analysis Screenshot'
-  }
-]
+images: [{ url: '/images/projects/la.jpg', alt: '2024 Crime in Los Angeles Analysis Screenshot' }]
 featured: true
 order: 2
 ---
@@ -37,6 +32,7 @@ This project provides an in-depth analysis of the 2024 crime data from Los Angel
 ## Technical Implementation
 
 The analysis was conducted using Python and popular data science libraries:
+
 - **Pandas and NumPy** for data manipulation and cleaning.
 - **SciPy** for statistical analysis.
 - **Scikit-learn** for building and evaluating the Logistic Regression model.

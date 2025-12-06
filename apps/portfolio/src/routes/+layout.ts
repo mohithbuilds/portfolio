@@ -1,6 +1,6 @@
 export const load = async () => {
 	return {
-		SEO : {
+		SEO: {
 			title: 'Mohith Nagendra | Software Development Engineer',
 			description:
 				'Software Development Engineer specializing in building scalable, reliable, and data-intensive systems. Explore Mohith Nagendra’s portfolio to see work in backend engineering, APIs, data pipelines, and high-performance systems optimized for real-world impact.',

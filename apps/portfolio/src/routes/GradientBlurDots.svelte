@@ -1,5 +1,5 @@
 <div
-	class="from-background gradient-blur dots bg-linear-to-t pointer-events-none absolute -top-48 h-48 w-full to-transparent"
+	class="from-background gradient-blur dots pointer-events-none absolute -top-48 h-48 w-full bg-linear-to-t to-transparent"
 ></div>
 
 <style lang="postcss">

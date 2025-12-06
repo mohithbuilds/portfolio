@@ -14,12 +14,7 @@ keyFeatures:
   - 'Five-year outcome projection'
   - 'Actionable insights for strategic planning'
 technologies: ['Python', 'Pandas', 'NumPy', 'SciPy', 'Matplotlib', 'Pulp']
-images: [
-  {
-    url: '/images/projects/Acme Company Structure, Inputs & Constraint.png',
-    alt: 'ACME Case Study Screenshot'
-  }
-]
+images: [{ url: '/images/projects/Acme Company Structure, Inputs & Constraint.png', alt: 'ACME Case Study Screenshot' }]
 featured: true
 order: 1
 ---
@@ -37,6 +32,7 @@ This project is a sales forecasting and optimization platform for Acme. It lever
 ## Technical Implementation
 
 The project is built using Python and a suite of data science libraries.
+
 - **Pandas and NumPy** are used for data manipulation and numerical calculations.
 - **SciPy and Pulp** are used for the optimization algorithms.
 - **Matplotlib** is used for generating visualizations of the forecasts and scenarios.

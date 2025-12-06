@@ -37,10 +37,10 @@
 			<BskyAnimated size={2.3} />
 		</a>
 	</div>
-	<div class="flex items-center justify-center gap-2 mb-8">
-		<a class="hover:underline w-16 text-right" href="/about/mohithnagendra" onclick={scrollToTop}>About</a>
-		<a class="hover:underline text-center text-base" href="/" onclick={scrollToTop}>Home</a>
-		<a class="hover:underline w-16 text-left" href="/blog" onclick={scrollToTop}>Blog</a>
+	<div class="mb-8 flex items-center justify-center gap-2">
+		<a class="w-16 text-right hover:underline" href="/about/mohithnagendra" onclick={scrollToTop}>About</a>
+		<a class="text-center text-base hover:underline" href="/" onclick={scrollToTop}>Home</a>
+		<a class="w-16 text-left hover:underline" href="/blog" onclick={scrollToTop}>Blog</a>
 	</div>
 
 	<p class="text-center">

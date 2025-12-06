@@ -102,7 +102,7 @@
 		<div class="pointer-events-none fixed inset-0">
 			{#each particles as particle (particle.id)}
 				<div
-					class="absolute select-none text-xs will-change-transform"
+					class="absolute text-xs will-change-transform select-none"
 					style="transform: translate3d({particle.position.x}px, {particle.position
 						.y}px, 0) scale3d({particle.scale}, {particle.scale}, 1); opacity: {particle.opacity};"
 				>
@@ -118,7 +118,7 @@
 					y: 50,
 					easing: cubicOut,
 				}}
-				class="text-muted-foreground absolute -right-7 top-[3px] select-none text-xs">max</span
+				class="text-muted-foreground absolute top-[3px] -right-7 text-xs select-none">max</span
 			>
 		{/if}
 	</div>

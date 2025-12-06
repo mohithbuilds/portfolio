@@ -13,10 +13,7 @@
 	const ogImage = data.meta.ogImage || 'https://mohithn.vercel.app/images/og-mohithn.png';
 
 	function safeJsonLd(obj: object) {
-		return JSON.stringify(obj)
-			.replace(/</g, '\\u003C')
-			.replace(/>/g, '\\u003E')
-			.replace(/&/g, '\\u0026');
+		return JSON.stringify(obj).replace(/</g, '\\u003C').replace(/>/g, '\\u003E').replace(/&/g, '\\u0026');
 	}
 </script>
 
@@ -78,7 +75,7 @@
 <div class="relative flex flex-col gap-8 pt-6 sm:pt-12">
 	<article class="prose prose-hr:border-t prose-hr:border-muted-foreground mx-auto max-w-full text-pretty lg:max-w-4xl">
 		<header>
-			<h1 class="text-pretty text-center text-2xl sm:text-4xl">{data.meta.title}</h1>
+			<h1 class="text-center text-2xl text-pretty sm:text-4xl">{data.meta.title}</h1>
 			<p class="text-center">
 				<time datetime={data.meta.publishedAt}>{formatDate(data.meta.publishedAt)}</time>
 				<span>by</span>

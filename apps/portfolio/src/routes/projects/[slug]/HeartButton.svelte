@@ -162,10 +162,10 @@
 		ontouchstart={handleTouchStart}
 		ontouchend={handleTouchEnd}
 		class={cn(
-			'z-20 transform select-none transition-all ',
+			'z-20 transform transition-all select-none ',
 			isHovering && !isMaxCountReached && `animate-scale-bounce random-rotate`,
 			{
-				'rotate-0 scale-90': isDown && !isMaxCountReached,
+				'scale-90 rotate-0': isDown && !isMaxCountReached,
 			},
 			{
 				'pointer-events-none': isMaxCountReached || htmlButtonProps.disabled,

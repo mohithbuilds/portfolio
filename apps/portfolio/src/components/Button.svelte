@@ -13,7 +13,7 @@
 
 <button
 	class={cn(
-		'bg-foreground/20 hover:bg-foreground/30 flex h-fit w-fit items-center justify-center gap-2 rounded-sm border border-opacity-10 px-4 py-2 text-sm transition-colors hover:border-opacity-50 hover:underline',
+		'bg-foreground/20 hover:bg-foreground/30 border-opacity-10 hover:border-opacity-50 flex h-fit w-fit items-center justify-center gap-2 rounded-sm border px-4 py-2 text-sm transition-colors hover:underline',
 		className
 	)}
 	{onclick}

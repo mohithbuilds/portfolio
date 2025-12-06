@@ -31,6 +31,7 @@ This project is a robust command-line interface (CLI) password manager developed
 ## Technical Implementation
 
 The project is primarily implemented in **Python**, leveraging several key libraries:
+
 - **`cryptography`**: For robust encryption and decryption of sensitive password data.
 - **`pyperclip`**: For cross-platform clipboard operations.
 - **`customtkinter`**: (Note: While `customtkinter` is listed as a dependency, the `main.py` provided indicates a CLI application. This dependency might be for a planned GUI or an alternative entry point not currently in `main.py`.)

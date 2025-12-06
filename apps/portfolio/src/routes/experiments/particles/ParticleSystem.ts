@@ -55,7 +55,7 @@ export class ParticleSystem {
 				angle: config.particleConfig?.angle ?? 0,
 				waveAmplitude: config.particleConfig?.waveAmplitude ?? 1,
 				waveFrequency: config.particleConfig?.waveFrequency ?? 0.02,
-				turbulence: config.particleConfig?.turbulence ?? 0
+				turbulence: config.particleConfig?.turbulence ?? 0,
 			},
 			cursorInteraction: config.cursorInteraction ?? false,
 			cursorRadius: config.cursorRadius ?? 100,
@@ -64,8 +64,8 @@ export class ParticleSystem {
 			colorOverlay: {
 				enabled: config.colorOverlay?.enabled ?? false,
 				color: config.colorOverlay?.color ?? '#ffffff',
-				intensity: config.colorOverlay?.intensity ?? 0.5
-			}
+				intensity: config.colorOverlay?.intensity ?? 0.5,
+			},
 		};
 		this.frameInterval = 1000 / this.config.targetFPS;
 
@@ -76,9 +76,8 @@ export class ParticleSystem {
 		);
 
 		// Initialize spatial partitioning grid
-		this.particleGrid = Array.from(
-			{ length: Math.ceil(canvas.height / this.config.gridSize) },
-			() => Array.from({ length: Math.ceil(canvas.width / this.config.gridSize) }, () => new Set())
+		this.particleGrid = Array.from({ length: Math.ceil(canvas.height / this.config.gridSize) }, () =>
+			Array.from({ length: Math.ceil(canvas.width / this.config.gridSize) }, () => new Set())
 		);
 
 		this.ctx.imageSmoothingEnabled = false;
@@ -91,7 +90,7 @@ export class ParticleSystem {
 		// Store initial positions when particles are created
 		this.initialPositions = this.particles.map((p) => ({
 			x: p.x,
-			y: p.y
+			y: p.y,
 		}));
 	}
 
@@ -112,7 +111,7 @@ export class ParticleSystem {
 				row.push({
 					brightness,
 					color: `rgb(${red}, ${green}, ${blue})`,
-					position: [x, y]
+					position: [x, y],
 				});
 			}
 			this.mappedImage.push(row);
@@ -137,12 +136,7 @@ export class ParticleSystem {
 			const gridX = Math.floor(particle.x / this.config.gridSize);
 			const gridY = Math.floor(particle.y / this.config.gridSize);
 
-			if (
-				gridY >= 0 &&
-				gridY < this.particleGrid.length &&
-				gridX >= 0 &&
-				gridX < this.particleGrid[0].length
-			) {
+			if (gridY >= 0 && gridY < this.particleGrid.length && gridX >= 0 && gridX < this.particleGrid[0].length) {
 				this.particleGrid[gridY][gridX].add(particle);
 			}
 		}
@@ -184,20 +178,12 @@ export class ParticleSystem {
 			const gridY = Math.floor(particle.y);
 			const gridX = Math.floor(particle.x);
 
-			if (
-				gridY >= 0 &&
-				gridY < this.mappedImage.length &&
-				gridX >= 0 &&
-				gridX < this.mappedImage[0].length
-			) {
+			if (gridY >= 0 && gridY < this.mappedImage.length && gridX >= 0 && gridX < this.mappedImage[0].length) {
 				const pixelData = this.mappedImage[gridY][gridX];
 				particle.color = pixelData.color;
 
 				// Only update particle position if not in static mode or if cursor interaction is active
-				if (
-					!this.config.staticMode ||
-					(this.cursorInteraction && this.isParticleNearCursor(particle))
-				) {
+				if (!this.config.staticMode || (this.cursorInteraction && this.isParticleNearCursor(particle))) {
 					particle.update(
 						pixelData.brightness,
 						effectiveTimeStep,
@@ -207,7 +193,7 @@ export class ParticleSystem {
 									y: this.mouseY,
 									radius: this.cursorRadius,
 									force: this.cursorForce,
-									isStatic: this.config.staticMode
+									isStatic: this.config.staticMode,
 								}
 							: undefined
 					);
@@ -348,7 +334,7 @@ export class ParticleSystem {
 
 			this.config.colorOverlay = {
 				...this.config.colorOverlay,
-				...newSettings.colorOverlay
+				...newSettings.colorOverlay,
 			};
 
 			// Clear caches if overlay settings changed
@@ -423,7 +409,7 @@ export class ParticleSystem {
 		const parsed = {
 			r: parseInt(this.colorParseCtx.fillStyle.slice(1, 3), 16),
 			g: parseInt(this.colorParseCtx.fillStyle.slice(3, 5), 16),
-			b: parseInt(this.colorParseCtx.fillStyle.slice(5, 7), 16)
+			b: parseInt(this.colorParseCtx.fillStyle.slice(5, 7), 16),
 		};
 
 		this.colorCache.set(color, parsed);
@@ -438,7 +424,7 @@ export class ParticleSystem {
 		return {
 			r: Math.round(base.r * (1 - intensity) + overlay.r * intensity),
 			g: Math.round(base.g * (1 - intensity) + overlay.g * intensity),
-			b: Math.round(base.b * (1 - intensity) + overlay.b * intensity)
+			b: Math.round(base.b * (1 - intensity) + overlay.b * intensity),
 		};
 	}
 

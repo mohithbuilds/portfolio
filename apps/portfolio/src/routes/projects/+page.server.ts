@@ -9,10 +9,10 @@ export const load: PageServerLoad = async () => {
 		slug: project.slug,
 		title: project.title,
 		description: project.description,
-		type: project.type
+		type: project.type,
 	}));
 
 	return {
-		projects: projectsForIndex
+		projects: projectsForIndex,
 	};
 };

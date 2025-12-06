@@ -111,7 +111,7 @@
 			icon: siDocker,
 		},
 		{
-			name: "Terraform",
+			name: 'Terraform',
 			url: 'https://developer.hashicorp.com/terraform',
 			icon: siTerraform,
 		},

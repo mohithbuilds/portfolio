@@ -13,12 +13,7 @@ keyFeatures:
   - 'Developed program loading and disassembly functions'
   - 'Deepened understanding of hardware and assembly'
 technologies: ['C', 'Assembly']
-images: [
-  {
-    url: '/images/projects/CPU.jpg',
-    alt: 'Mad Raisin CPU Screenshot'
-  }
-]
+images: [{ url: '/images/projects/CPU.jpg', alt: 'Mad Raisin CPU Screenshot' }]
 featured: true
 order: 7
 ---
@@ -34,6 +29,7 @@ This project focuses on low-level hardware and assembly language concepts, imple
 ## Technical Implementation
 
 The project was coded entirely in **C**, running in a MobaXterm environment. It demonstrates a strong proficiency in low-level systems programming, including:
+
 - **Bitwise Operations:** Extensive use of bit operators (`&`, `|`, `^`, `~`, `<<`, `>>`) for precise data manipulation.
 - **Memory Management:** Concepts of loading programs into memory.
 - **Data Structures:** Using C structs to represent instruction formats.

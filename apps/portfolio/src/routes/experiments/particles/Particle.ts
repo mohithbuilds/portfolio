@@ -33,14 +33,13 @@ export class Particle {
 			waveAmplitude: config.waveAmplitude ?? 1,
 			waveFrequency: config.waveFrequency ?? 0.02,
 			turbulence: config.turbulence ?? 0,
-			shape: config.shape ?? 'circle'
+			shape: config.shape ?? 'circle',
 		};
 
 		this.x = Math.random() * canvasWidth;
 		this.y = Math.random() * canvasHeight;
 		this.speed = 1;
-		this.velocity =
-			this.config.minVelocity + Math.random() * (this.config.maxVelocity - this.config.minVelocity);
+		this.velocity = this.config.minVelocity + Math.random() * (this.config.maxVelocity - this.config.minVelocity);
 		this.size = this.config.minSize + Math.random() * (this.config.maxSize - this.config.minSize);
 		this.angle = (this.config.angle * Math.PI) / 180;
 		this.originalX = this.x;
@@ -55,8 +54,7 @@ export class Particle {
 		this.time += 0.01 * timeStep;
 		this.speed = brightness;
 		const baseSpeed =
-			Math.max(this.config.baseMovementSpeed - this.speed + this.velocity, this.config.minSpeed) *
-			timeStep;
+			Math.max(this.config.baseMovementSpeed - this.speed + this.velocity, this.config.minSpeed) * timeStep;
 
 		// Reset velocity components
 		this.vx = 0;
@@ -84,8 +82,7 @@ export class Particle {
 				break;
 
 			case 'waves':
-				this.vx =
-					Math.sin(this.y * this.config.waveFrequency + this.time) * this.config.waveAmplitude;
+				this.vx = Math.sin(this.y * this.config.waveFrequency + this.time) * this.config.waveAmplitude;
 				this.vy = baseSpeed;
 				break;
 
