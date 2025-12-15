@@ -63,7 +63,7 @@
 		"@oslojs/crypto": "^1.0.1",
 		"@oslojs/encoding": "^1.1.0",
 		"clsx": "^2.1.1",
-		"drizzle-orm": "^0.43.1",
+		"drizzle-orm": "^0.45.0",
 		"fast-blurhash": "^1.1.4",
 		"gsap": "^3.13.0",
 		"lucide-svelte": "^0.554.0",
