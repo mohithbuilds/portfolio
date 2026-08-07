@@ -6,6 +6,7 @@
 	import { HeartIcon, Calendar } from '@lucide/svelte';
 	import posthog from 'posthog-js';
 	import { scrollToTop } from '@/lib/utils';
+	import { MEETING_BOOKING_URL } from '$lib/config';
 </script>
 
 <Divider class="my-0 sm:my-0" />
@@ -37,10 +38,10 @@
 			<BskyAnimated size={2.3} />
 		</a>
 		<a
-			href="https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd"
+			href={MEETING_BOOKING_URL}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="transition-transform hover:scale-110 p-1"
+			class="p-1 transition-transform hover:scale-110"
 			title="Book a Meeting"
 			onclick={() => posthog.capture('meeting_booking_click', { url: 'https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd', location: 'footer' })}
 		>
@@ -53,13 +54,13 @@
 		<a class="hover:underline" href="/" onclick={scrollToTop}>Home</a>
 		<a class="hover:underline" href="/blog" onclick={scrollToTop}>Blog</a>
 		<a
-			class="hover:underline font-medium"
-			href="https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd"
+			class="font-medium hover:underline"
+			href={MEETING_BOOKING_URL}
 			target="_blank"
 			rel="noopener noreferrer"
 			onclick={() => posthog.capture('meeting_booking_click', { location: 'footer_link' })}
 		>
-			Book a Call 🗓️
+			Book a Call
 		</a>
 	</div>
 
