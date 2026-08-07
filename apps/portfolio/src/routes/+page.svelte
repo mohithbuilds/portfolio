@@ -4,6 +4,7 @@
 	import ExperienceSummary from '@/components/ExperienceSummary.svelte';
 	import List from '@/components/List.svelte';
 	import Technologies from '@/components/Technologies.svelte';
+	import MeetingBooking from '@/components/MeetingBooking.svelte';
 	import type { PageProps } from './$types';
 	import Blob from './Blob.svelte';
 	import GradientBlurDots from './GradientBlurDots.svelte';
@@ -54,6 +55,11 @@
 		<!-- 	<List items={experiments} /> -->
 		<!-- </section> -->
 		<!-- <Divider /> -->
+		<section id="book-meeting">
+			<h2 class="pb-4 text-3xl font-bold">Schedule a Meeting</h2>
+			<MeetingBooking />
+		</section>
+		<Divider />
 		<section id="contact">
 			<h2 class="pb-4 text-3xl font-bold">Contact</h2>
 			<div class="grid grid-cols-1 gap-16 md:grid-cols-2">
