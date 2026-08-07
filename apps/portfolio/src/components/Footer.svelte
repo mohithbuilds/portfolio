@@ -42,7 +42,7 @@
 			rel="noopener noreferrer"
 			class="transition-transform hover:scale-110 p-1"
 			title="Book a Meeting"
-			onclick={() => posthog.capture('meeting_booking_click', { location: 'footer' })}
+			onclick={() => posthog.capture('meeting_booking_click', { url: 'https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd', location: 'footer' })}
 		>
 			<span class="sr-only">Book a Meeting</span>
 			<Calendar class="size-6" />
