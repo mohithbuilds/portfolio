@@ -44,7 +44,7 @@
 
 {#if formSubmitted}
 	<div class="h-full w-full" transition:fade>
-		<iframe src="/Mohith_Engineering_Resume.pdf" class="h-screen w-full" title="Mohith's Resume"></iframe>
+		<iframe src="/Mohith_Resume.pdf" class="h-screen w-full" title="Mohith's Resume"></iframe>
 	</div>
 {:else}
 	<div class="flex min-h-[60vh] flex-col items-center justify-center gap-4" transition:fade>
