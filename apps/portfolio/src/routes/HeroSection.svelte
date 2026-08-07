@@ -7,6 +7,7 @@
 	import { MapPin, Calendar } from '@lucide/svelte';
 	import posthog from 'posthog-js';
 	import LinkButton from '@/components/LinkButton.svelte';
+	import { MEETING_BOOKING_URL } from '$lib/config';
 
 	let { initialLikes }: { initialLikes: number } = $props();
 </script>
@@ -79,7 +80,7 @@
 				<div class="mt-2 flex flex-wrap items-center gap-3">
 					<LinkButton class="w-[9rem]" href="/resume">Resume</LinkButton>
 					<a
-						href="https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd"
+						href={MEETING_BOOKING_URL}
 						target="_blank"
 						rel="noopener noreferrer"
 						class="bg-foreground/20 hover:bg-foreground/30 border-foreground/20 hover:border-opacity-50 flex h-fit w-fit items-center justify-center gap-2 rounded-sm border px-2 py-1 text-xs transition-colors sm:px-4 sm:py-2 sm:text-sm"
