@@ -83,7 +83,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						class="bg-foreground/20 hover:bg-foreground/30 border-foreground/20 hover:border-opacity-50 flex h-fit w-fit items-center justify-center gap-2 rounded-sm border px-2 py-1 text-xs transition-colors sm:px-4 sm:py-2 sm:text-sm"
-						onclick={() => posthog.capture('meeting_booking_click', { location: 'hero' })}
+						onclick={() => posthog.capture('meeting_booking_click', { url: 'https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd', location: 'hero' })}
 					>
 						<Calendar size={15} />
 						Book a Call
