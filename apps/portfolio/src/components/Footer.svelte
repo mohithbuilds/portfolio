@@ -3,7 +3,7 @@
 	import GitHubIconAnimated from '@/components/icons/GitHubIconAnimated.svelte';
 	import LinkedInAnimated from '@/components/icons/LinkedInIconAnimated.svelte';
 	import BskyAnimated from '@/components/icons/BskyAnimated.svelte';
-	import { HeartIcon, Calendar } from '@lucide/svelte';
+	import { HeartIcon } from '@lucide/svelte';
 	import posthog from 'posthog-js';
 	import { scrollToTop } from '@/lib/utils';
 	import { MEETING_BOOKING_URL } from '$lib/config';
@@ -36,17 +36,6 @@
 		>
 			<span class="sr-only">BSky</span>
 			<BskyAnimated size={2.3} />
-		</a>
-		<a
-			href={MEETING_BOOKING_URL}
-			target="_blank"
-			rel="noopener noreferrer"
-			class="p-1 transition-transform hover:scale-110"
-			title="Book a Meeting"
-			onclick={() => posthog.capture('meeting_booking_click', { url: 'https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd', location: 'footer' })}
-		>
-			<span class="sr-only">Book a Meeting</span>
-			<Calendar class="size-6" />
 		</a>
 	</div>
 	<div class="mb-8 flex flex-wrap items-center justify-center gap-4 text-sm">
