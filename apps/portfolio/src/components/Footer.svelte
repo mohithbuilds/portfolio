@@ -3,7 +3,7 @@
 	import GitHubIconAnimated from '@/components/icons/GitHubIconAnimated.svelte';
 	import LinkedInAnimated from '@/components/icons/LinkedInIconAnimated.svelte';
 	import BskyAnimated from '@/components/icons/BskyAnimated.svelte';
-	import { HeartIcon } from '@lucide/svelte';
+	import { HeartIcon, Calendar } from '@lucide/svelte';
 	import posthog from 'posthog-js';
 	import { scrollToTop } from '@/lib/utils';
 </script>
@@ -36,11 +36,31 @@
 			<span class="sr-only">BSky</span>
 			<BskyAnimated size={2.3} />
 		</a>
+		<a
+			href="https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="transition-transform hover:scale-110 p-1"
+			title="Book a Meeting"
+			onclick={() => posthog.capture('meeting_booking_click', { location: 'footer' })}
+		>
+			<span class="sr-only">Book a Meeting</span>
+			<Calendar class="size-6" />
+		</a>
 	</div>
-	<div class="mb-8 flex items-center justify-center gap-2">
-		<a class="w-16 text-right hover:underline" href="/about/mohithnagendra" onclick={scrollToTop}>About</a>
-		<a class="text-center text-base hover:underline" href="/" onclick={scrollToTop}>Home</a>
-		<a class="w-16 text-left hover:underline" href="/blog" onclick={scrollToTop}>Blog</a>
+	<div class="mb-8 flex flex-wrap items-center justify-center gap-4 text-sm">
+		<a class="hover:underline" href="/about/mohithnagendra" onclick={scrollToTop}>About</a>
+		<a class="hover:underline" href="/" onclick={scrollToTop}>Home</a>
+		<a class="hover:underline" href="/blog" onclick={scrollToTop}>Blog</a>
+		<a
+			class="hover:underline font-medium"
+			href="https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd"
+			target="_blank"
+			rel="noopener noreferrer"
+			onclick={() => posthog.capture('meeting_booking_click', { location: 'footer_link' })}
+		>
+			Book a Call 🗓️
+		</a>
 	</div>
 
 	<p class="text-center">

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ContactForm from '@/components/ContactForm.svelte';
+	import MeetingBooking from '@/components/MeetingBooking.svelte';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -8,17 +9,23 @@
 
 <div class="mx-auto max-w-[1200px] px-6 pt-8 pb-12 sm:pt-12">
 	<header class="mb-8">
-		<h1 class="mb-4 text-4xl font-bold">Contact</h1>
+		<h1 class="mb-4 text-4xl font-bold">Contact & Meeting</h1>
 	</header>
+
+	<div class="mb-12">
+		<MeetingBooking />
+	</div>
+
 	<div class="grid grid-cols-1 gap-16 md:grid-cols-2">
 		<div>
+			<h2 class="mb-4 text-2xl font-bold">Send a Message</h2>
 			<ContactForm {contactForm} />
 		</div>
 		<div>
-			<h2 class="mb-4 text-3xl font-bold">Get in Touch</h2>
+			<h2 class="mb-4 text-2xl font-bold">Get in Touch</h2>
 			<p class="text-muted-foreground mb-4">
 				I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel
-				free to reach out to me using the form, or through my social media channels.
+				free to reach out to me using the form above, booking a meeting directly, or through my social media channels.
 			</p>
 			<p class="text-muted-foreground">Let's create something awesome together!</p>
 		</div>

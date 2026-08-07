@@ -1,5 +1,6 @@
 <script lang="ts">
 	import TiltedImage from '$lib/components/TiltedImage.svelte';
+	import MeetingBooking from '@/components/MeetingBooking.svelte';
 </script>
 
 <svelte:head>
@@ -111,6 +112,9 @@
 				new ideas in computing, I enjoy collaborating on projects that combine technical depth with creativity and
 				purpose.
 			</p>
+			<div class="not-prose mt-6">
+				<MeetingBooking />
+			</div>
 		</section>
 	</div>
 </section>

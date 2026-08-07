@@ -4,7 +4,7 @@
 	import BskyAnimated from '@/components/icons/BskyAnimated.svelte';
 	import GitHubIconAnimated from '@/components/icons/GitHubIconAnimated.svelte';
 	import LinkedInAnimated from '@/components/icons/LinkedInIconAnimated.svelte';
-	import { MapPin } from '@lucide/svelte';
+	import { MapPin, Calendar } from '@lucide/svelte';
 	import posthog from 'posthog-js';
 	import LinkButton from '@/components/LinkButton.svelte';
 
@@ -76,7 +76,19 @@
 					</a>
 				</div>
 
-				<LinkButton class="mt-2 w-[9rem]" href="/resume">Resume</LinkButton>
+				<div class="mt-2 flex flex-wrap items-center gap-3">
+					<LinkButton class="w-[9rem]" href="/resume">Resume</LinkButton>
+					<a
+						href="https://calendar.notion.so/meet/mohithnagendra/sr5hw4yfd"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-foreground/20 hover:bg-foreground/30 border-foreground/20 hover:border-opacity-50 flex h-fit w-fit items-center justify-center gap-2 rounded-sm border px-2 py-1 text-xs transition-colors sm:px-4 sm:py-2 sm:text-sm"
+						onclick={() => posthog.capture('meeting_booking_click', { location: 'hero' })}
+					>
+						<Calendar size={15} />
+						Book a Call
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
